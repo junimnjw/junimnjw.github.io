@@ -4,15 +4,14 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+#About Me
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+* Name: Jinwoo Nam  
+* Job: SW Engineer at Samsung Electronics.
+* Degree
+    - UNIST, MS, 2012
+    - Pukyung Nat'l Univ., BS, 2006 
+* Research Interests: Computer Vision, Machine Learning and Computer Graphics  
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+You can find my public source codes at GitHub:
+[Github](https://github.com/junimnjw)
