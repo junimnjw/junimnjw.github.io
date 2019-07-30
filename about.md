@@ -4,6 +4,8 @@ title: About me
 permalink: /about/
 ---
 
+![title](../../images/profile.jpg)
+
 # Jinwoo Nam  
 * SW Engineer at Samsung Electronics
 * UNIST, M.S., 2012
@@ -13,5 +15,6 @@ permalink: /about/
 You can find my public source codes at GitHub:
 [Github](https://github.com/junimnjw)  
 
-![](./_images/profile.jpg "mypicture"){: width="100" height="100"}
+  
+
 
