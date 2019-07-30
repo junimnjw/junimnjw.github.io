@@ -3,7 +3,7 @@ layout: page
 title: About me
 permalink: /about/
 ---
-![title](/_images/profile.jpg){: width="100" height="100"}
+![title](https://visla.kr/wp/wp-content/uploads/2015/03/The-Simpsons-Illustrated-in-Streetwear-05.jpg){: width="100" height="100"}
 
 # Jinwoo Nam  
 * SW Engineer at Samsung Electronics
