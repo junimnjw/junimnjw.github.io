@@ -1,17 +1,14 @@
 ---
 layout: page
-title: About
+title: About me
 permalink: /about/
 ---
 
-#About Me
-
-* Name: Jinwoo Nam  
-* Job: SW Engineer at Samsung Electronics.
-* Degree
-    - UNIST, MS, 2012
-    - Pukyung Nat'l Univ., BS, 2006 
-* Research Interests: Computer Vision, Machine Learning and Computer Graphics  
+# Jinwoo Nam  
+* SW Engineer at Samsung Electronics
+* UNIST, M.S., 2012
+* Pukyung National University, B.S., 2006 
+* Research area: Computer Graphics, Machine Learning and Deep Learning.
 
 You can find my public source codes at GitHub:
 [Github](https://github.com/junimnjw)
