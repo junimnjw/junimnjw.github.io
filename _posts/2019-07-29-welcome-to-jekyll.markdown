@@ -4,22 +4,12 @@ title:  "Welcome to Jekyll!"
 date:   2019-07-29 21:41:24 +0900
 categories: jekyll update
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+# 블로그 개설을 맞이하여
+안녕하세요. 
+새로운 주소로 이동하였습니다. 
+네이버 블로그가 편한건 있지만, 
+몇가지 제약이 있어서 저만의 블로그를 운영하려고 합니다. 
+당분간 [기존 블로그]([https://blog.naver.com/junimnje](https://blog.naver.com/junimnje))는 유지하고, 추후 이사를 
+끝낸 시점에 삭제하려고 합니다. 
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+여러분의 많은 관심과 격려 부탁드립니다. 
