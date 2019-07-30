@@ -3,7 +3,7 @@ layout: page
 title: About me
 permalink: /about/
 ---
-![my_picture](/_images/profile.jpg){: width="100" height="100"}
+![title](/_images/profile.jpg){: width="100" height="100"}
 
 # Jinwoo Nam  
 * SW Engineer at Samsung Electronics
