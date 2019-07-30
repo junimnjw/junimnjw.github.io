@@ -1,8 +1,7 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2019-07-29 21:41:24 +0900
-categories: jekyll update
+title:  "블로그 이사하였습니다!!"
+date:   2019-07-30 12:14:00 +0900
 ---
 # 블로그 개설을 맞이하여
 안녕하세요. 
