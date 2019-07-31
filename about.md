@@ -4,7 +4,7 @@ title: About me
 permalink: /about/
 ---
 
-![title](../../images/profile.jpg)
+![title](./assets/profile.jpg)
 
 # Jinwoo Nam  
 * SW Engineer at Samsung Electronics
@@ -12,7 +12,7 @@ permalink: /about/
 * Pukyung National University, B.S., 2006 
 * Research area: Computer Graphics, Machine Learning and Deep Learning.
 
-You can find my public source codes at GitHub:
+You can find my codes:
 [Github](https://github.com/junimnjw)  
 
   
