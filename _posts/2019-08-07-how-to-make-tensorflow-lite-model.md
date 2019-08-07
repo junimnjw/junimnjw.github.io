@@ -1,6 +1,11 @@
 ---
 layout: post
 title: "Tensorflow Lite 모델 만들기"
+date: 2019-08-07
+lastmod : 2019-08-07 20:16:00
+sitemap :
+changefreq : daily
+priority : 1.0
 ---
 
 안녕하세요. 코딩벅스입니다. 
