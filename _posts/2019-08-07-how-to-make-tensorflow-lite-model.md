@@ -1,5 +1,5 @@
 ---
-layout:post
+layout: post
 title: "Tensorflow Lite 모델 만들기"
 ---
 
