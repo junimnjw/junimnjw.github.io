@@ -1,4 +1,7 @@
-# Tensorflow Lite 모델 만들기
+---
+Layout:post
+Title: Tensorflow Lite 모델 만들기
+---
 
 안녕하세요. 코딩벅스입니다. 
 
