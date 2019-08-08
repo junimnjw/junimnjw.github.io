@@ -40,9 +40,9 @@ priority : 1.0
 
 
 
-[SavedModel 빌드방법][https://medium.com/@jsflo.dev/saving-and-loading-a-tensorflow-model-using-the-savedmodel-api-17645576527]
+[SavedModel 빌드방법](https://medium.com/@jsflo.dev/saving-and-loading-a-tensorflow-model-using-the-savedmodel-api-17645576527)
 
-[GraphDef 빌드방법][]
+[GraphDef 빌드방법]()
 
 
 
@@ -75,10 +75,12 @@ priority : 1.0
 
     *$* tensorboard --logdir=./pb_logs/ --host localhost --port 8088
 
-    ![텐서보드 캡쳐 화면][https://github.com/junimnjw/junimnjw.github.io/blob/master/assets/tensorboard-capture.JPG]
+    ![텐서보드 캡쳐 화면(../assets/tensorboard-capture.jpg)
 
     
-
+  
+    
+  
 * **tflite_convert**를 사용해서 **.pb** 파일을 **.tflite**로 변환합니다. 
   *$* tflite_convert \
   --saved_model_dir=(기존 saved model 명) \
