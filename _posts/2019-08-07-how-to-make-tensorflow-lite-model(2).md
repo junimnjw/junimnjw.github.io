@@ -62,12 +62,17 @@ priority : 1.0
 
 ### Saved Model을 사용하는 경우
 
-
+* 생성하기
+* 변환하기
 
 ### GraphDef를 사용하는 경우 
 
-* 확보한 GraphDef 모델(**.pb**)를 텐서보드(Tensorboard)로 시각화하고, 
-  **Input Node**와 **Output Node** 명을 정확히 기록해 놓습니다. 
+* 생성하기
+  
+확보한 GraphDef 모델(**.pb**)을 텐서보드(Tensorboard)로 시각화하고, 
+  
+여기서 **Input Node**와 **Output Node** 명을 정확히 기록해 놓습니다. 
+  
 
   * GraphDef 구하기
 
@@ -75,13 +80,13 @@ priority : 1.0
 
     *$* tensorboard --logdir=./pb_logs/ --host localhost --port 8088
 
-    ![텐서보드 캡쳐 화면(../assets/tensorboard-capture.jpg)
-
-    
+    ![텐서보드 캡쳐 화면](../assets/tensorboard-capture.jpg)
   
     
   
-* **tflite_convert**를 사용해서 **.pb** 파일을 **.tflite**로 변환합니다. 
+* 변환하기
+  
+  **tflite_convert**를 사용해서 **.pb** 파일을 **.tflite**로 변환합니다. 
   *$* tflite_convert \
   --saved_model_dir=(기존 saved model 명) \
   --output_file=(원하는 ouput 모델명) \
