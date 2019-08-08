@@ -14,7 +14,7 @@ priority : 1.0
 
 ~~(1) 텐서플로우에서 학습한 모델 저장하기~~
 
-**(2) 확보한 모델을 텐서플로우 라이트 모델로 변환하기 **
+**(2) 확보한 모델을 텐서플로우 라이트 모델로 변환하기**
 
 (3) 변환된 모델을 안드로이드 앱에서 로드하기
 
@@ -22,11 +22,13 @@ priority : 1.0
 
 이전 포스트에 이어서,  **확보한 모델을 텐서플로우 라이트 모델로 변환하기**에 대해서 다루겠습니다. 
 
-어떻게 보면 이번 연재의 가장 핵심이 되는 포스트입니다. 
+이번 연재의 가장 핵심이 되는 포스트입니다. 
 
 
 
-텐서플로우 라이트 모델은 고정된 바이너리입니다. 기존 텐서플로우에서 학습한 모델에서 추론에만 사용되는 
+텐서플로우 라이트 모델(.tflite)은 고정된 바이너리입니다. 
+
+기존 텐서플로우에서 학습한 모델에서 추론에만 사용되는 
 
 정보만을 쏙쏙 빼내어 최대한 경량화된 형태의 모델 타입으로 만들어 냅니다. 
 
@@ -73,7 +75,7 @@ priority : 1.0
 
     *$* tensorboard --logdir=./pb_logs/ --host localhost --port 8088
 
-    ![텐서보드 캡쳐 화면][../assets/tensorboard-capture.jpg]
+    ![텐서보드 캡쳐 화면][https://github.com/junimnjw/junimnjw.github.io/blob/master/assets/tensorboard-capture.JPG]
 
     
 
@@ -83,7 +85,3 @@ priority : 1.0
   --output_file=(원하는 ouput 모델명) \
   --input_arrays="myInput"
   --output_arrays="myOutput"
-
-
-
-### 
