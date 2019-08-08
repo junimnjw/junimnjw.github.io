@@ -63,7 +63,7 @@ priority : 1.0
 
     *$* tensorboard --logdir=./pb_logs/ --host localhost --port 8088
 
-    ![텐서보드 캡쳐 화면](https://github.com/junimnjw/junimnjw.github.io/assets/tensorboard-capture.jpg)
+    ![텐서보드 캡쳐 화면](https://t1.daumcdn.net/cfile/tistory/232187485816EB1F31)
   
     
   
