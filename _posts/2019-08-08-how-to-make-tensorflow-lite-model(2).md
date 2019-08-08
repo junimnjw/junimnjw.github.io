@@ -55,7 +55,10 @@ priority : 1.0
 ### Saved Model을 사용하는 경우
 
 * 생성하기
+
 * 변환하기
+
+  $ tflite_convert  --output_file=mymodel.tflite  --saved_model_dir=saved_log
 
 ### GraphDef를 사용하는 경우 
 
