@@ -63,15 +63,15 @@ priority : 1.0
 
     *$* tensorboard --logdir=./pb_logs/ --host localhost --port 8088
 
-    ![텐서보드 캡쳐 화면](https://github.com/junimnjw/junimnjw.github.io/assets/tensorboard-capture.jpg)
+    ![텐서보드 캡쳐 화면](https://github.com/junimnjw/junimnjw.github.io/blob/master/assets/tensorboard-capture.jpg)
   
     
   
 * 변환하기
   
-  **tflite_convert**를 사용해서 **.pb** 파일을 **.tflite**로 변환합니다.  
-  *$* tflite_convert \  
-  --saved_model_dir=(기존 saved model 명) \  
-  --output_file=(원하는 ouput 모델명) \  
-  --input_arrays="myInput"  
+  **tflite_convert**를 사용해서 **.pb** 파일을 **.tflite**로 변환합니다. 
+  *$* tflite_convert \
+  --saved_model_dir=(기존 saved model 명) \
+  --output_file=(원하는 ouput 모델명) \
+  --input_arrays="myInput"
   --output_arrays="myOutput"
