@@ -19,7 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   저의 블로그에 방문해 주셔서 감사합니다. IT와 관련한 다양한 이야기들을  
   여러분들과 함께 자유롭게 나누기를 희망합니다.  
 baseurl: "" # the subpath of your site, e.g. /blog
-url: https://junimnjw.github.io 
+url: "https://junimnjw.github.io"
 twitter_username: 
 github_username:  junimnjw
 

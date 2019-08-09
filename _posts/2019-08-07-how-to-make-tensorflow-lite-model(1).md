@@ -76,7 +76,7 @@ priority : 1.0
 
 <br><br>
 
-![SavedModel 생성결과](../assets/savedmodel_captured.jpg)
+![SavedModel 생성결과](/assets/img/savedmodel_captured.jpg)
 
 
 
