@@ -78,5 +78,9 @@ priority : 1.0
 
 ![SavedModel 생성결과](/assets/img/savedmodel_captured.jpg)
 
+![SavedModel 생성결과2](https://github.com/junimnjw/junimnjw.github.io/assets/img/savedmodel_captured.jpg)
+
+![SavedModel 생성결과3](../assets/img/savedmodel_captured.jpg)
+
 
 
