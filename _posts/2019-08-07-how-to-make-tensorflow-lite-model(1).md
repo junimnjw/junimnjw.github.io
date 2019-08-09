@@ -76,3 +76,9 @@ priority : 1.0
 
 [MNIST 학습 모델에 대한 SavedModel 생성](../assets/main.py)
 
+
+
+![SavedModel 생성결과](../assets/savedmodel_captured.jpg)
+
+
+
