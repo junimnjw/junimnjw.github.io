@@ -8,9 +8,7 @@ changefreq : daily
 priority : 1.0
 ---
 
-안녕하세요. 코딩벅스입니다. 
-
-
+안녕하세요. 코딩벅스입니다.   <br><br><br>
 
 **Tensorflow Lite**(이하 텐서플로우 라이트)는 기존 텐서플로우의 경량화 버전입니다. 
 
@@ -24,11 +22,11 @@ priority : 1.0
 
 이를 추론(Inference)에 사용합니다. 
 
-
+<br><br>
 
 위에서 언급한 내용에 대한 설명은 광범위하기에, 다음과 같이 세 단계로 연재하려고 합니다. 
 
-
+<br><br>
 
 (1) 텐서플로우 모델(**SavedModel**) 생성하기
 
@@ -36,7 +34,7 @@ priority : 1.0
 
 (3) 안드로이드 앱에 적용하기
 
-
+<br><br>
 
 우선, 이번 포스트에서는 **(1) 텐서플로우 모델 생성하기**를 다루고자 합니다. 
 
@@ -46,7 +44,7 @@ priority : 1.0
 
 결국, 이러한 그래프의 노드와 에지 정보가 어떻게 보면 해당 모델을 표현한다고 볼 수 있죠.
 
-
+<br><br>
 
 #### CheckPoint Vs. SavedModel
 
@@ -58,7 +56,7 @@ priority : 1.0
 
 그래프를 다시 정의해주어야 합니다. 
 
-
+<br>
 
 이와는 달리 **SavedModel**은 Variables 뿐만 아니라 Graph에 대한 정보를 포함하고 있고, 
 
@@ -72,11 +70,11 @@ priority : 1.0
 
 공유하고자 합니다. 
 
+<br><br>
 
+[MNIST 학습 모델에 대한 SavedModel 생성](/assets/main.py)
 
-[MNIST 학습 모델에 대한 SavedModel 생성](../assets/main.py)
-
-
+<br><br>
 
 ![SavedModel 생성결과](../assets/savedmodel_captured.jpg)
 
