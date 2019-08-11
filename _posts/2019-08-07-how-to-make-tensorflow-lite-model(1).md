@@ -46,4 +46,4 @@ priority : 1.0
 
 
 
-![SavedModel 생성결과](/assets/img/savedmodel_captured.jpg)
+![SavedModel 생성결과]({{site.url}}/assets/img/savedmodel_captured.jpg)
