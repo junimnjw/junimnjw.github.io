@@ -30,7 +30,9 @@ priority : 1.0
 
 첫번째 순서로 이번 포스트에서는 **(1) 텐서플로우 모델 생성하기**를 다루고자 합니다. 저장해야 할 텐서플로우 모델의 포맷은 **SavedModel** 또는 **GraphDef**입니다. 텐서플로우 학습 모델은 **그래프**로 표현됩니다. 결국, 이러한 그래프의 노드와 에지 정보가 어떻게 보면 해당 모델을 표현한다고 볼 수 있죠.
 
+<br>
 
+<br>
 
 #### CheckPoint Vs. SavedModel
 
@@ -47,3 +49,4 @@ priority : 1.0
 
 
 ![SavedModel 생성결과]({{site.url}}/assets/img/savedmodel_captured.jpg)
+
