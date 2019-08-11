@@ -46,7 +46,5 @@ priority : 1.0
 
 [MNIST 학습 모델에 대한 SavedModel 생성](/assets/main.py)
 
-![SavedModel](./assets/profile.jpg)
-
-![SavedModel](../assets/img/savedmodel_captured.jpg)
+![SavedModel](https://github.com/junimnjw/junimnjw.github.io/blob/master/assets/img/savedmodel_captured.JPG?raw=true)
 
