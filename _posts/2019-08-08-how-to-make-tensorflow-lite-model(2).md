@@ -28,7 +28,22 @@ priority : 1.0
 
 * GraphDef
 
-  
+
+
+
+#### GraphDef
+
+* 변환
+
+  * 대상 모델 파일(GraphDef) 경로 확인 
+
+  * 터미널에서 다음과 같이 입력 
+
+    `tflite_convert --output_file=.\model\my_model.tflite --graph_def_file=.\model\frozen_graph.pb --input_arrays=Placeholder --output_arrays=Mean --allow_custom_ops`
+
+    ![결과](tflite_output.JPG)
+
+
 
 ### Saved Model에 대한 변환
 
