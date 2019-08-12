@@ -20,14 +20,7 @@ priority : 1.0
 
 ### 변환하기 
 
- 그럼 본격적으로 변환하는 방법을 배워보도록 하겠습니다. 변환하는 과정을 대상이 되는 모델의 포맷에 따라 언급하도록 하겠습니다 .
-
-
-
-* SavedModel
-
-* GraphDef
-
+ 그럼 본격적으로 변환하는 방법을 배워보도록 하겠습니다. 앞선 연재에서 확보한 텐서플로우 모델 파일에 대한 변환 과정을 포맷에 따라 구분해서 언급하도록 하겠습니다 .
 
 
 
@@ -41,16 +34,17 @@ priority : 1.0
 
     `tflite_convert --output_file=.\model\my_model.tflite --graph_def_file=.\model\frozen_graph.pb --input_arrays=Placeholder --output_arrays=Mean --allow_custom_ops`
 
-    ![결과](tflite_output.JPG)
+    ![결과](https://github.com/junimnjw/junimnjw.github.io/blob/master/assets/img/tflite_outputfile.JPG?raw=true)
 
+    
 
+#### SavedModel
 
-### Saved Model에 대한 변환
+* 변환
 
-* 앞서 확보한 **SavedModel** 디렉토리가 위치한 곳으로 이동합니다. 
-* 터미널에서 다음 명령어를 입력합니다. 
-  * $ tflite_convert  --output_file=my_tflite_model.tflite  --saved_model_dir=saved_model_ouput
-* 최종적으로 tflite 파일이 생성 되었는지 확인합니다. 
+  * 터미널에서 다음 명령어를 입력합니다. 
+
+    tflite_convert  --output_file=my_tflite_model.tflite  --saved_model_dir=saved_model_ouput
 
 
 
