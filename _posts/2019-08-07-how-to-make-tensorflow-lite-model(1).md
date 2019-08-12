@@ -66,5 +66,5 @@ priority : 1.0
 
 참고문헌
 
-[1]:https://medium.com/@prasadpal107/saving-freezing-optimizing-for-inference-restoring-of-tensorflow-models-b4146deb21b5 "How to store and save a model"
+[1]:https://medium.com/@prasadpal107/saving-freezing-optimizing-for-inference-restoring-of-tensorflow-models-b4146deb21b5 "How to store, save and freeze a model"
 
