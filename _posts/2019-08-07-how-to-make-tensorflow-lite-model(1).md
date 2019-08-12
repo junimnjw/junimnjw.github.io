@@ -30,9 +30,13 @@ priority : 1.0
 
  먼저 이번 포스트에서는 **(1) 텐서플로우 모델 생성하기**를 다루겠습니다. 변환하려면 그 대상이 필요하겠죠? 생성할 텐서플로우 모델 저장 포맷은  **SavedModel** 또는 **GraphDef**입니다. 
 
+<br>
+
+#### GraphDef 구하기
+
  **GraphDef**는 학습 모델의 그래프 정보, 즉 노드와 노드사이의 엣지의 연결정보, 노드명, 그리고 각 노드의 오퍼레이션정보 등을 가지고 있습니다. 다만, 학습과정에서 계산된 가중치(Weight)값들은 별도의 파일(**Checkpoint**)로 분리되어 저장되게 됩니다. 텐서플로우 라이트 모델로 변환하기 위해서는 GraphDef의 그래프 정보와, Checkpoint의 가중치 정보를 하나로 묶어주어야하는데, 이 행위를 프리징(Freezing)이라고 하고 [freez_graph.py](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/python/tools/freeze_graph.py) 스크립트가 그 역할을 수행합니다. 
 
-* GraphDef 생성하기 
+* 생성 
 
   * pb를 가지고 tensorboard에서 visualize하기
 
@@ -56,15 +60,20 @@ priority : 1.0
 
       
 
-  * freeze_graph.py를 사용해서 GraphDef 파일 획득 
+  * freeze_graph.py를 사용한 **GraphDef 객체** 파일 획득 
 
-    * `python freeze_graph.py --input_graph=model\my_train_model.pbtxt --input_checkpoint=model\my_train_model.ckpt --output_graph=model\freezed.pb --output_node_names=Mean`
+    * `python freeze_graph.py --input_graph=model\my_train_model.pbtxt --input_checkpoint=model\my_train_model.ckpt --output_graph=model\frozen_graph.pb --output_node_names=Mean`
 
       ![결과](https://github.com/junimnjw/junimnjw.github.io/blob/master/assets/img/freezed.JPG?raw=true)
 
-  
+<br>
+
+#### SavedModel
 
  **SavedModel**은 앞서 분리되었었던 그래프정보와 가중치(Weight)정보를 망라한 모델 전체에 대한 정보를 하나의 디렉토리내에 가지고 있는 형태입니다.  별도의 텐서플로우 모델 코드가 없이도, SavedModel을 통해 완벽하게 해당 모델에 대한 복원이 가능하기때문에 프로그램 배포에 많이 사용됩니다.   
+
+* 생성
+  * 비교적 쉽습니다. 왜? SavedModel은 그래프와 가중치를 포함한 모델 전체에 대한 정보를 가지고 있기에..
 
 <br>
 
@@ -99,4 +108,6 @@ priority : 1.0
 참고문헌
 
 [1]:https://medium.com/@prasadpal107/saving-freezing-optimizing-for-inference-restoring-of-tensorflow-models-b4146deb21b5 "How to store, save and freeze a model"
+[2]: https://eehoeskrap.tistory.com/343 "ckpt, pb 그리고 pbtxt의 차이점"
+[3]: https://gusrb.tistory.com/21 "ckpt를 pb로 변환하는 방법"
 
