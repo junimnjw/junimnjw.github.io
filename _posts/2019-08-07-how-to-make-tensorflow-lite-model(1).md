@@ -54,13 +54,17 @@ priority : 1.0
 
  이 모델을 텐서플로우 라이트에서 사용하려면 추론에 사용되지 않는 정보들은 모두 싹 제거하고, 오직 필요한 정보들만을 대상으로 해야합니다. 안타깝게도 이를 위해서는 약간의 수고가 필요합니다. 즉, 프리징(Freezing)이라는 과정을 거처서 어느정도 정제를 해야하고 이를 가지고 변환에 사용할 수 있습니다. 
 
-
-
 <br>
 
  **SavedModel**은 가중치(Weight)뿐 아니라 모델의 그래프 정보를 같이 포함하고 있습니다. 사실상, 학습 모델에 대한 모든 정보를 가지고 있기 때문에, 모델 자체를 배포하는데 주로 활용됩니다. 텐서플로우에서 **SavedModel**에 대한 자세한 설명은 차후 별도로 다루겠습니다. **SavedModel**을 배포하는 간단한 예제를 다음 링크에서 공유합니다. 
 
-[SavedModel 파이썬 생성예제 - main.py](/assets/main.py)
+
 
 !["생성결과"](https://github.com/junimnjw/junimnjw.github.io/blob/master/assets/img/savedmodel_captured.JPG?raw=true)
+
+
+
+참고문헌
+
+[1]:https://medium.com/@prasadpal107/saving-freezing-optimizing-for-inference-restoring-of-tensorflow-models-b4146deb21b5 "How to store and save a model"
 
