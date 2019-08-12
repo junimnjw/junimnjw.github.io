@@ -34,7 +34,7 @@ priority : 1.0
 
 * GraphDef 생성하기 
 
-  * Checkpoint 와 pbtxt를 가지고 pb만들기 
+  * pb를 가지고 tensorboard에서 visualize하기
 
     * `python import_pb_to_tensorboard.py --model_dir model\my_train_model.pb --log_dir .\tensorboard\`
 
@@ -42,15 +42,25 @@ priority : 1.0
 
       
 
-  * Tensoboard로 Pb를 Load한 이후 Output Node Name을 확인 
+  * Tensoboard에서 Output Node Name을 확인 
 
     * `tensorboard --logdir=.\tensorboard\ --host localhost --port 8088`
 
-      TensorBoard 1.14.0 at http://localhost:8088/ (Press CTRL+C to quit)
+      
 
-  * 다음과 같은 명령어로 Freezed Graph 획득 
+      ![tensorboard_1](https://github.com/junimnjw/junimnjw.github.io/blob/master/assets/img/tensorboard_1.JPG?raw=true)
 
-    * 
+      ![tensorboard2](https://github.com/junimnjw/junimnjw.github.io/blob/master/assets/img/tensorboard_2.JPG?raw=true)
+
+      **텐서보드를 사용해서 추론(Inference)단계에서 Output Node Name이 `Mean` 임을 확인하였습니다.**
+
+      
+
+  * freeze_graph.py를 사용해서 GraphDef 파일 획득 
+
+    * `python freeze_graph.py --input_graph=model\my_train_model.pbtxt --input_checkpoint=model\my_train_model.ckpt --output_graph=model\freezed.pb --output_node_names=Mean`
+
+      ![결과](https://github.com/junimnjw/junimnjw.github.io/blob/master/assets/img/freezed.JPG?raw=true)
 
   
 
