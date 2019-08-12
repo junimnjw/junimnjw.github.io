@@ -42,16 +42,19 @@ priority : 1.0
 
 <br>
 
-[freezing 이전의 저장된 checkpoint 파일들]()
+[freezing 이전의 저장된 checkpoint 파일들](https://github.com/junimnjw/junimnjw.github.io/blob/master/assets/img/ckptfile.JPG?raw=true)
 
 <br>
 
-* meta: 그래프 정보
-* xxx-data-xxx : 가중치 정보
+* meta: 그래프들(GraphDef, SaverDef)에 대한 정보
+* xxx-data-xxx : 가중치, 바이어스, 플레이스 홀더등에 대한 값
+* xxx-index-xxx: 각 텐서와 값에 대한 테이블 정보
 
 <br>
 
-이 모델을 변환에 사용하려면 군더더기는 다 빼고 필요한 정보만 뽑아내야합니다. 추론에 사용되지 않는 정보들은 모두 싹 제거하고, 가장 최근에 학습된 가중치의 값만을 사용하기만 하면 됩니다. 이러한 과정을 프리징(Freezing)이라고 하죠. 프리징한 결과를 가지고 변환에 사용할 수 있습니다. 
+ 이 모델을 텐서플로우 라이트에서 사용하려면 추론에 사용되지 않는 정보들은 모두 싹 제거하고, 오직 필요한 정보들만을 대상으로 해야합니다. 안타깝게도 이를 위해서는 약간의 수고가 필요합니다. 즉, 프리징(Freezing)이라는 과정을 거처서 어느정도 정제를 해야하고 이를 가지고 변환에 사용할 수 있습니다. 
+
+
 
 <br>
 
