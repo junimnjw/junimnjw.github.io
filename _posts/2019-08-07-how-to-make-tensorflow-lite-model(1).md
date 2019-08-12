@@ -12,8 +12,6 @@ priority : 1.0
 
 <br>
 
-<br>
-
  **텐서플로우 라이트(Tensorflow Lite)**는 텐서플로우의 경량화 버전입니다. 스마트 폰 이나 태블릿 같은 임베디드 시스템은 하드웨어 성능이 비교적 열세하기 때문에, 서버나 PC같은 고성능 장치에서 학습을 진행하고, 여기서 생성한 모델을 텐서플로우 라이트 포맷(*.tflite)으로 변환 후, 이를 추론(Inference)에 사용합니다. 이번 주제는 다음 세 단계로 연재하려고 합니다.   
 
 <br>
@@ -26,13 +24,11 @@ priority : 1.0
 
 <br>
 
- 먼저 이번 포스트에서는 **(1) 텐서플로우 모델 생성하기**를 다루겠습니다. 변환할 대상이 필요하겠죠? 생성할 텐서플로우 모델 저장 포맷은  **SavedModel** 또는 **GraphDef**입니다. 
+ 먼저 이번 포스트에서는 **(1) 텐서플로우 모델 생성하기**를 다루겠습니다. 변환하려면 그 대상이 필요하겠죠? 생성할 텐서플로우 모델 저장 포맷은  **SavedModel** 또는 **GraphDef**입니다. 
 
  **GraphDef**는 학습 모델의 그래프 정보, 즉 노드와 노드사이의 엣지의 연결정보, 노드명, 그리고 각 노드의 오퍼레이션정보 등을 가지고 있습니다. 다만, 학습과정에서 계산된 가중치(Weight)값들은 별도의 파일(**Checkpoint**)로 분리되어 저장되게 됩니다. 텐서플로우 라이트 모델로 변환하기 위해서는 GraphDef의 그래프 정보와, Checkpoint의 가중치 정보를 하나로 묶어주어야하는데, 이 행위를 프리징(Freezing)이라고 하고 [freez_graph.py](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/python/tools/freeze_graph.py) 스크립트가 그 역할을 수행합니다. 
 
  **SavedModel**은 앞서 분리되었었던 그래프정보와 가중치(Weight)정보를 망라한 모델 전체에 대한 정보를 하나의 디렉토리내에 가지고 있는 형태입니다.  별도의 텐서플로우 모델 코드가 없이도, SavedModel을 통해 완벽하게 해당 모델에 대한 복원이 가능하기때문에 프로그램 배포에 많이 사용됩니다.   
-
-<br>
 
 <br>
 
@@ -42,7 +38,7 @@ priority : 1.0
 
 <br>
 
-[freezing 이전의 저장된 checkpoint 파일들](https://github.com/junimnjw/junimnjw.github.io/blob/master/assets/img/ckptfile.JPG?raw=true)
+![freezing 이전의 저장된 checkpoint 파일들](https://github.com/junimnjw/junimnjw.github.io/blob/master/assets/img/ckptfile.JPG?raw=true)
 
 <br>
 
