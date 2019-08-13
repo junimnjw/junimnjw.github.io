@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to make a Tensorflow Lite Model-(1)"
+title: "텐서플로우 라이트 모델 생성(1)"
 date: 2019-08-07
 lastmod : 2019-08-11 09:16:00
 sitemap :
