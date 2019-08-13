@@ -42,7 +42,7 @@ priority : 1.0
 
    * 결과화면 
 
-     ![결과]()
+     ![결과](https://github.com/junimnjw/junimnjw.github.io/blob/master/assets/img/tensorflow_logdir.JPG?raw=true)
 
      
 
@@ -58,9 +58,7 @@ priority : 1.0
 
    * 결과화면
 
-     ![결과]()
-
-   
+     ![결과](https://github.com/junimnjw/junimnjw.github.io/blob/master/assets/img/tensorboard-full-captured.JPG?raw=true){:width="50%" height="50%"}
 
    
 
