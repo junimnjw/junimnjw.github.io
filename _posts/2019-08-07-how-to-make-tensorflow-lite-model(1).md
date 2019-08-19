@@ -36,7 +36,7 @@ priority : 1.0
 
 #### GraphDef 구하기
 
- **GraphDef**는 학습 모델의 그래프 정보, 즉 노드와 노드사이의 엣지의 연결정보, 노드명, 그리고 각 노드의 오퍼레이션정보 등을 가지고 있습니다. 다만, 학습과정에서 계산된 가중치(Weight)값들은 별도의 파일(**Checkpoint**)로 분리되어 저장되게 됩니다. 텐서플로우 라이트 모델로 변환하기 위해서는 GraphDef의 그래프 정보와, Checkpoint의 가중치 정보를 하나로 묶어주어야하는데, 이 행위를 프리징(Freezing)이라고 하고 [freez_graph.py](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/python/tools/freeze_graph.py) 스크립트가 그 역할을 수행합니다. 
+ **GraphDef**는 학습 모델의 그래프 정보, 즉 노드와 노드사이의 엣지의 연결정보, 노드명, 그리고 각 노드의 오퍼레이션정보 등을 가지고 있습니다. 다만, 학습과정에서 계산된 가중치(Weight)값들은 별도의 파일(**Checkpoint**)로 분리되어 저장되게 됩니다. 텐서플로우 라이트 모델로 변환하기 위해서는 **GraphDef의 그래프 정보와, Checkpoint의 가중치 정보를 하나로 묶어주는데**, 이 행위를 프리징(Freezing)이라고 하고 [freez_graph.py](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/python/tools/freeze_graph.py) 스크립트가 그 역할을 수행합니다. 
 
 * 생성 
 
