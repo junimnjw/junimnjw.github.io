@@ -14,27 +14,69 @@ priority : 1.0
 
 
 
- **텐서플로우 라이트**, 텐서플로우의 경량화 버전입니다. 서버나 PC와 같은 고성능 장치에서 학습하고, 여기서 생성한 모델을 텐서플로우 라이트 포맷(*.tflite)으로 변환하고, 이 변환된 모델은 텐서플로우 라이트를 통해서 안드로이드 앱에서 사용할 수 있습니다. 이는 클라우드 서비스가 아닌, 온디바이스(즉 모바일장치내)에서 실행되는 딥러닝 구현입니다. 백문이 불여일행!!! 직접, 내가 학습한 텐서플로우 모델을 안드로이드 앱에서 실행해보는 과정을 나누려고 합니다. 내용이 긴 만큼, 다음과 같이 나누어 연재하겠습니다.  
+ **텐서플로우 라이트**, 텐서플로우의 경량화 버전이죠. 서버나 PC같은 고성능 장치에서 학습한 모델을 텐서플로우 라이트 포맷(*.tflite)으로 변환하면, 이 변환 모델을 가지고 텐서플로우 라이트를 통해 모바일에서 추론(Inference)할 수 있습니다. 이는 클라우드 서비스가 아닌, 온디바이스( On-Device), 즉 모바일 자체에서 실행가능한 딥러닝 구현입니다. 백문이 불여일행! 직접 학습한 텐서플로우 모델을 모바일에서 실행하는 과정을 설명하려고 합니다. 내용이 긴 만큼, 다음과 같이 나누어 연재하겠습니다.  
 
 * 텐서플로우 모델 생성
-* 텐서플로우 라이트 모델(**.tflite**)로 변환하기
+* 텐서플로우 라이트 모델로 변환하기
 * 안드로이드 앱에서 사용하기
 
 ## 본문
 
-
-
 #### 텐서플로우 모델 생성
 
- 먼저 학습 모델이 필요합니다. 음...대상이 필요하니.. 당연한 말이죠. 근데 어떤 모델을 만들어볼까요? AlexNet, GoogleNet? 이미 만들어진 아주 유명한 딥러닝 모델도 있지만.. 아무래도 직접 만들어보는게 좋으니.. 쉬운 모델을 예시로 드는게 좋겠죠? 딥러닝에서의 HelloWorld라 불리는, MNIST 데이터에 대한 Fully Connected Layers학습 모델을 텐서플로우로 생성해보도록 하겠습니다. 생성 후, 해당 모델을 저장해보도록 하겠습니다.
+ 먼저 대상이 될 딥러닝 모델이 필요합니다. 음... 당연한 말이죠. 근데 어떤 모델을, 어떻게 만들어볼까요? AlexNet, GoogleNet? 아무래도 직접 만들어보는게 좋으니.. 직접 설계할 수 있는 쉬운 딥러닝 모델은 어떨가요? 저는 딥러닝에서 HelloWorld라고 불리는, MNIST 데이터에 학습모델을 생성해보겠습니다. 아래는 모델을 학습하기 위한 텐서플로우 코드입니다. 
 
-##### 모델 저장
+~~~python
+from tensorflow.examples.tutorials.mnist import input_data
+mnist = input_data.read_data_sets("MNIST_data/", one_hot=True)
 
- 이제 위에서 정의한 모델에 대한 학습 결과를 저장하겠습니다. 텐서플로우 모델을 저장한다는 건 어떤 의미일까요? 텐서플로우 모델은 **그래프(Graph)**입니다. 딥러닝모델은, 여러개의 노드들이 하나의 층(Layer)을 이루고, 그리고 수많은 선들이 이러한 층과 층을 연결하는 형태의 그래프인 것이죠.  시각적으로 볼 때 그렇다는 거죠. 그래서 텐서플로우 모델을 저장하면, 이러한 그래프정보를 저장하게 되고, 각 선(에지)들의 가중치 값을 별도로 저장하게 됩니다. 저장의 최종 포맷은 몇가지가 있지만 보통은 tf.train.saver API를 사용하면, 이러한 가중치는 체크포인트(checkpoint)라는 포맷으로 저장됩니다. 그리고 그래프 정보는 meta라는 형태로 저장됩니다. 
+import tensorflow as tf
 
-#####Frozen Graph로 변환
+X = tf.placeholder(tf.float32, [None, 784])
+Y_ = tf.placeholder(tf.float32, [None, 10])
 
- 위에서 저장한 텐서플로우 모델을, 텐서플로우 라이트 포맷(tflite)로 바꾸기 위해서, 사전 작업이 필요합니다. 바로 프리징(freezing)입니다. 텐서플로우 라이트 모델은 오로지 추론(inference)을 위해서 사용되는 그래프입니다. 추론을 위한 그래프 정보에는 학습에 사용되는 그래프의 불필요한 정보들은 버리고, 또한 가중치값도 더이상 변경이 없기때문에, 이를 상수화 시켜 저장합니다. 이렇게 그래프에 상수화된 가중치값을 포함한 형태로 굳히는 작업을 하고, 이를 가지고 tflite로 바꾸게 됩니다. 이러한 프리징(Freezing)을 돕기위해, tensorflow에서 제공하는 [freez_graph.py](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/python/tools/freeze_graph.py) 사용하면 됩니다. 
+W = tf.Variable(tf.zeros([784, 10]))
+b = tf.Variable(tf.zeros([10]))
+K = tf.matmul(X, W) + b
+Y = tf.nn.softmax(K)
+loss_function = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits_v2(logits=K, labels=Y_))
+train_step = tf.train.GradientDescentOptimizer(0.5).minimize(loss_function)
+
+with tf.Session() as sess:
+    sess.run(tf.initialize_all_variables())
+    for i in range(1000):
+        batch_xs, batch_ys = mnist.train.next_batch(100)
+        sess.run(train_step, feed_dict={X: batch_xs, Y_:batch_ys})
+
+    correct_prediction = tf.equal(tf.math.argmax(Y, 1), tf.math.argmax(Y_, 1))
+    accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
+    print(sess.run(accuracy, feed_dict={X:mnist.test.images, Y_:mnist.test.labels}))
+~~~
+
+#### 모델 저장
+
+ 이제 위에서 학습한 모델을 저장합니다. 텐서플로우 모델을 저장한다는 건 어떤 의미일까요? 텐서플로우 모델은 **그래프(Graph)**입니다. 딥러닝모델은, 여러개의 노드들이 하나의 층(Layer)을 이루고, 그리고 수많은 선들이 이러한 층과 층을 연결하는 형태의 그래프인 것이죠.  시각적으로 볼 때 그렇다는 거죠. 그래서 텐서플로우 모델을 저장하면, 이러한 그래프정보를 저장하게 되고, 각 선(에지)들의 가중치 값을 별도로 저장하게 됩니다. 저장의 최종 포맷은 몇가지가 있지만 보통은 tf.train.saver API를 사용하면, 이러한 가중치는 체크포인트(checkpoint)라는 포맷으로 저장됩니다. 그리고 그래프 정보는 meta라는 형태로 저장됩니다. 
+
+~~~python
+checkpoint_output_path = os.path.join(os.getcwd(), 'checkpoint_output_dir', 'my_model')
+saver = tf.train.Saver()
+
+with tf.Session() as sess:
+    sess.run(tf.initialize_all_variables())
+    for i in range(1000):
+        batch_xs, batch_ys = mnist.train.next_batch(100)
+        if i % 100 == 0:
+            saver.save(sess, checkpoint_output_path, global_step=i)
+        sess.run(train_step, feed_dict={X: batch_xs, Y_: batch_ys})
+
+    correct_prediction = tf.equal(tf.math.argmax(Y, 1), tf.math.argmax(Y_, 1))
+    accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
+    print(sess.run(accuracy, feed_dict={X: mnist.test.images, Y_: mnist.test.labels}))
+~~~
+
+#### Frozen Graph로 변환
+
+ 저장한 텐서플로우 모델을, 텐서플로우 라이트 포맷(tflite)로 바꾸기 위해, 한가지 더 사전 작업이 필요합니다. 바로 프리징(freezing)입니다. 텐서플로우 라이트 모델은 오로지 추론(inference)을 위해서 사용되는 그래프입니다. 추론을 위한 그래프 정보에는 학습에 사용되는 그래프의 불필요한 정보들은 버리고, 또한 가중치값도 더이상 변경이 없기때문에, 이를 상수화 시켜 저장합니다. 이렇게 그래프에 상수화된 가중치값을 포함한 형태로 굳히는 작업을 하고, 이를 가지고 tflite로 바꾸게 됩니다. 이러한 프리징(Freezing)을 돕기위해, tensorflow에서 제공하는 [freez_graph.py](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/python/tools/freeze_graph.py) 사용하면 됩니다. 
 
 * Frozen Graph 생성
 
