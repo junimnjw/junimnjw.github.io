@@ -72,8 +72,10 @@ priority : 1.0
 
  자! 여기까지, 텐서플로우 모델을 직접 생성하고, 이를 저장하고, 또 Frozen Graph를 얻는 짧지만 아주 고된 과정을 살펴보았습니다. 아주 고생많으셨습니다. 다음 연재에서는 이렇게 확보한 Frozen Graph를, 드디어 우리가 원하는, 텐서플로우 라이트에서 인식가능한 형태인 tflite로 변환해보는 시간을 가져보겠습니다. 감사합니다!~
 
-##참고문헌
+## 참고문헌
 
-[1]:https://medium.com/@prasadpal107/saving-freezing-optimizing-for-inference-restoring-of-tensorflow-models-b4146deb21b5 "How to store, save and freeze a model"
-[2]: https://eehoeskrap.tistory.com/343 "ckpt, pb 그리고 pbtxt의 차이점"
-[3]: https://gusrb.tistory.com/21 "ckpt를 pb로 변환하는 방법"
+[1]https://medium.com/@prasadpal107/saving-freezing-optimizing-for-inference-restoring-of-tensorflow-models-b4146deb21b5
+
+[2]https://eehoeskrap.tistory.com/343
+
+[3]https://gusrb.tistory.com/21
