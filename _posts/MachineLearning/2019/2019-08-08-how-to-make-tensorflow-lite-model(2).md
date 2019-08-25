@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "텐서플로우 라이트 모델 생성(2)"
-categories: ML
+categories: Machine Learning
 date: 2019-08-09
 lastmod : 2019-08-11 09:16:00
 sitemap :

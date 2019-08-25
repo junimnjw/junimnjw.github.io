@@ -1,4 +1,4 @@
 ---
 layout: category
-title: Machine Learning
+title: Machine_Learning
 ---
