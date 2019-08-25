@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "SavedModel은 무엇인가?"
+categories: AI
 date: 2019-08-14
 lastmod : 2019-08-14 14:00:00
 sitemap :
