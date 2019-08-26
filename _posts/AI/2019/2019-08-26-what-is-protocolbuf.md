@@ -31,16 +31,53 @@ ProtoBuf를 사용하는 순서는 다음과 같습니다.
 
 ### ProtoBuf 파일 생성
 
-ProtoBuf 포맷으로 작성한 코드입니다. 자세하게 라인별 설명을 다루진 않겠습니다. 어차피 설명은 [가이드](https://developers.google.com/protocol-buffers/docs/pythontutorial)에 자세하게 나와있습니다. 
+ProtoBuf 포맷으로 작성된 코드입니다. 라인별 자세한 설명은 [공식 가이드](https://developers.google.com/protocol-buffers/docs/pythontutorial)를 참고해주세요. 대충 보면, C++ 문법과 유사해보이기도 하네요. Person이라는 개체를 중첩된 구조체로 정의한 예제입니다. 
+
+
+
+~~~protobuf
+package tutorial;
+
+message Person{
+    required string name = 1;
+    required int32 id = 2;
+    optional string email = 3;
+
+    enum PhoneType{
+    MOBILE = 0;
+    HOME = 1;
+    WORK = 2;
+    }
+
+    message PhoneNumber{
+        required string number = 1;
+        optional PhoneType type = 2 [default = HOME];
+    }
+
+    repeated PhoneNumber phone = 4;
+}
+
+message AddressBook{
+    repeated Person = 1;
+}
+~~~
 
 
 
 ### 컴파일 하기
 
+이제 위 proto 파일을 컴파일 하겠습니다. 이 포스트에서는 타겟 언어로 파이썬을 선택하겠습니다. 파이썬으로 타겟팅 했으니, 파이썬용 protoc 컴파일러를 설치해야겠죠. 
+
+* 설치는 pip install protobuf 
+
+
+
+
+
 ### 컴파일 된 모듈 다시 로드
 
 
- 
+
 
 ## 결론
 
