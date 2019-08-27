@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "ProtcolBuffer, Who are You?"
+title: "Protcol Buffers, Who are You?"
 categories: AI
 date: 2019-08-26
 lastmod : 2019-08-26 14:00:00
@@ -9,12 +9,14 @@ changefreq : hourly
 priority : 1.0
 ---
 
+
+
 안녕하세요. 코딩벅스입니다.   
 
 
 ## 배경설명
 
- 텐서플로우에서는 학습을 완료한 모델을 **Protocol Buffers(이하 ProtoBuf)** 포맷으로 저장합니다. 그리고 추후에 이 파일을 읽고, 모델을 복원해서 다시 추론(Inference)에 사용하죠. 그럼 여기서 **ProtoBuf** 포맷은 과연 무엇일까요? 넌 누구냐? 이번 포스트는 여기에 대한 간단한 답변을 드리고자 합니다. 
+ 텐서플로우에서는 학습 완료한 모델을 **Protocol Buffers(이하 ProtoBuf)** 포맷으로 저장합니다. 그리고 추후 이 파일을 읽고, 모델을 복원해서 다시 추론(Inference)에 사용하죠. 여기서 **ProtoBuf** 포맷은 과연 무엇일까요? 이번 포스트에서는 이 질문에 대한 간략한 답변을 드리고자 합니다. 
 
 
 
