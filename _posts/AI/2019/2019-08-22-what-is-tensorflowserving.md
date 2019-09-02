@@ -23,7 +23,7 @@ priority : 1.0
 
 #### Tensorflow Serving LifeCycle
 
-![tfserving](https://github.com/junimnjw/junimnjw.github.io/blob/master/assets/img/tfserving_lifecycle.png): https://www.freecodecamp.org/news/how-to-deploy-tensorflow-models-to-production-using-tf-serving-4b4b78d41700/ 
+![img][http://github.com/junimnjw/junimnjw.github.io/blob/master/assets/img/tfserving_lifecycle.png]
 
 
 
