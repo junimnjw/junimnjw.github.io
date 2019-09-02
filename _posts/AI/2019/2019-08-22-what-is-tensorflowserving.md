@@ -21,6 +21,24 @@ priority : 1.0
 
 
 
+#### Tensorflow Serving LifeCycle
+
+![tfserving][./assets/img/tfserving_lifecycle.png]: https://www.freecodecamp.org/news/how-to-deploy-tensorflow-models-to-production-using-tf-serving-4b4b78d41700/ 
+
+
+
+#### Tensorflow Serving & SavedModel
+
+
+
+텐서플로우 모델을  ***Serve*** 하기 위해서는 모델을 **SavedModel**로 저장해야합니다. 
+
+하나의 약속이죠.
+
+
+
+
+
 ## 결론
 
 
