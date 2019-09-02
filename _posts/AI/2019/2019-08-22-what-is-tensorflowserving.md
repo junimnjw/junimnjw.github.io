@@ -27,3 +27,4 @@ priority : 1.0
 
 ## 참고문헌
 
+[1] https://www.freecodecamp.org/news/how-to-deploy-tensorflow-models-to-production-using-tf-serving-4b4b78d41700/ "how to deploy tensorflow models to production using tensorflow serving"
