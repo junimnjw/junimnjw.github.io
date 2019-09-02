@@ -23,7 +23,7 @@ priority : 1.0
 
 #### Tensorflow Serving LifeCycle
 
-![img][http://github.com/junimnjw/junimnjw.github.io/blob/master/assets/img/tfserving_lifecycle.png]
+<img src="https://cdn-media-1.freecodecamp.org/images/1*TwfOoS3M8DaUiB7ntP07_w.png" alt="img" style="zoom:80%;" />
 
 
 
