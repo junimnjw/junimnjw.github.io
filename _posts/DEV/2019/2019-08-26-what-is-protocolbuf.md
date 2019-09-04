@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Protcol Buffers, Who are You?"
-categories: AI
+categories: DEV
 date: 2019-08-26
 lastmod : 2019-08-26 14:00:00
 sitemap :

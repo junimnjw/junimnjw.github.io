@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Tensorflow Serving, Who are You?"
-categories: AI
+categories: DEV
 date: 2019-08-22
 lastmod : 2019-08-22 14:00:00
 sitemap :
