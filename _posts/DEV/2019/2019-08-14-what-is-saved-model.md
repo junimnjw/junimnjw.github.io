@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SavedModel은 무엇인가?"
+title: "SavedModel, Who are U?"
 categories: DEV
 date: 2019-08-14
 lastmod : 2019-08-28 14:00:00
