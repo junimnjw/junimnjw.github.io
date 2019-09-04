@@ -4,8 +4,7 @@ title: ABOUT
 permalink: /about/
 ---
 
-<center>![title](./assets/profile.jpg)</center>
-
+![title](./assets/profile.jpg)
 
 
 # 남 진 우(南 進 佑)
