@@ -70,17 +70,17 @@ priority : 1.0
 
 
 
-2. 서버 구동 
+1. 서버 구동 
 
 
 
-위에서 저장한 모델을 서빙하는데 아래 명령어가 전부입니다. 
+위에서 저장한 모델을 가지고 운영환경에서 **TF Serving**을 구동하는데는 아래 명령어가 전부입니다. 
 
 ~~~
 $ tensorflow_model_server --port=9000 --model_name=deeplab --model_base_path=<full/path/to/serving/versions/>
 ~~~
 
-model_base_path에 SavedModel을 저장한 디렉토리 위치만 입력해주는게 끝입니다. 어떤 버전을 어떻게 로드하는지 어떻게 아는건가요? 걱정마세요. **TF Serving**이 해당 Path내에 존재하는 모델들의 버전 정보를 보고 제일 상위버전을 알아서 로드해줍니다. 
+model_base_path에 이전에 생성해두었던 **SavedModel**의 위치만 입력해주는게 끝입니다. 어떤 버전을 어떻게 로드하는지 어떻게 아는건가요? 걱정마세요. **TF Serving**이 해당 Path내에 존재하는 모델들의 버전 정보를 보고 제일 상위버전을 알아서 로드해줍니다. 
 
 
 
