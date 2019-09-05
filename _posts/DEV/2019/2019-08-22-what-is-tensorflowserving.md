@@ -60,25 +60,35 @@ priority : 1.0
 
 #### 나도 도전!
 
-자! 지금부터 실제로 텐서플로우 서빙을 사용해보도록 하죠!
-
-우선 배포할 대상 모델이 필요하겠죠?
-
-실습은 역시나 Tensorflow의 **HelloWorld**인 ***MNIST 모델***로 하겠습니다. 
-
-참고로 텐서플로우 모델을  ***Serve*** 하기 위해서는 **SavedModel**로 저장해야합니다. 
-
-**SavedModel**은 이전 포스트에서 자세히 다루었으니 참고해주세요. 
+지금부터 실제로 텐서플로우 서빙을 사용해보도록 하죠! 
 
 
 
-* 준비물
-  * **SavedModel Format**으로 저장된 TF Model
-  * 
+1. **SavedModel** 생성 
+
+배포할 대상 모델이 필요하겠죠? 여기서는 **Tensorflow**의 **HelloWorld**인 ***MNIST 모델***로 하겠습니다. 텐서플로우 모델을  ***TF Serving***에서 이용할 수 있도록 하기 위해서는 **SavedModel**로 저장해야합니다. **SavedModel**에 관한 자세한 내용은 [이전 포스트][https://junimnjw.github.io/dev/2019/08/14/what-is-saved-model.html]를 참고해주세요. 실습의 속도를 내기위해 언급한 MNIST에 데이터 셋에 대한 머신러닝 모델 생성 및 학습코드, 그리고 **SavedModel Format**으로 Export하는 풀코드는 제 깃헙에 올려두었으니 참고해주세요. 참고로, **SaveModel Format**으로 머신러닝 모델을 저장하기 위해서는, TF Serving 에서 제공하는 API인 <u>**SavedModelBuilder**</u>를 사용하면 됩니다. 해당 클래스의 자세한 사용법은 추후 기회가 되면, 별도로 포스팅 하겠습니다. 
 
 
 
-SavedModel에 대한 모든 내용을 알 필요는 업시
+2. 서버 구동 
+
+
+
+위에서 저장한 모델을 서빙하는데 아래 명령어가 전부입니다. 
+
+~~~
+$ tensorflow_model_server --port=9000 --model_name=deeplab --model_base_path=<full/path/to/serving/versions/>
+~~~
+
+model_base_path에 SavedModel을 저장한 디렉토리 위치만 입력해주는게 끝입니다. 어떤 버전을 어떻게 로드하는지 어떻게 아는건가요? 걱정마세요. **TF Serving**이 해당 Path내에 존재하는 모델들의 버전 정보를 보고 제일 상위버전을 알아서 로드해줍니다. 
+
+
+
+3. 클라이언트 요청부
+
+서버에 수기로 작성한 숫자 이미지 하나(물론 MNIST에서 제공하는 TEST이미지)를 보내고, 이것에 대한 결과를 받는 요청을 작성하겠습니다. 
+
+
 
 
 
@@ -86,7 +96,9 @@ SavedModel에 대한 모든 내용을 알 필요는 업시
 
 여기까지, 텐서플로우 서빙이 무엇인지 간략히 알아보았습니다. 딥러닝 모델에 대한 실제 양산화를 생각하고 계신 분들은 틈틈이 배워 놓는 것도 도움이 될 것입니다. 감사합니다. 
 
+
+
 ## 참고문헌
 
-[1]:https://www.freecodecamp.org/news/how-to-deploy-tensorflow-models-to-production-using-tf-serving-4b4b78d41700/
+[1]:https://www.freecodecamp.org/news/how-to-deploy-tensorflow-models-to-production-using-tf-serving-4b4b78d41700/	"How to deploy a Tensorlofw Model"
 
