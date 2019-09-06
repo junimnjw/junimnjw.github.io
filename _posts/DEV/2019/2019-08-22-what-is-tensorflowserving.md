@@ -54,33 +54,29 @@ priority : 1.0
 
 
 
-1. **SavedModel** 생성 
+1. **SavedModel 생성**  
 
- 당연히 배포 할 머신러닝 모델이 필요하겠죠? 제일 만만한 **Tensorflow**의 **HelloWorld**인 ***MNIST 모델***로 하겠습니다.  **TF Serving**에서 모델을 인식하게 하기위해서는 해당 모델을 **SavedModel**포맷으로 저장해야합니다. **SavedModel**에 대한 자세한 내용은 [이전 포스트][https://junimnjw.github.io/dev/2019/08/14/what-is-saved-model.html]를 참고해주세요. 실습 속도를 내기위해 MNIST에 데이터 셋에 대한 머신러닝 모델 생성, 그리고 **SavedModel Format**으로 저장하는 내용의 코드는 [깃헙](https://github.com/junimnjw/codes/blob/master/python/mnist_tflite_project/export_mnist_to_savedmodel.py)에 올려두었으니 참고해주세요. 
+   당연히 배포 할 머신러닝 모델이 필요하겠죠? 제일 만만한 **Tensorflow**의 **HelloWorld**인 ***MNIST 모델***로 하겠습니다.  **TF Serving**에서 모델을 인식하게 하기위해서는 해당 모델을 **SavedModel**포맷으로 저장해야합니다. **SavedModel**에 대한 자세한 내용은 [이전 포스트][https://junimnjw.github.io/dev/2019/08/14/what-is-saved-model.html]를 참고해주세요. 실습 속도를 내기위해 MNIST에 데이터 셋에 대한 머신러닝 모델 생성, 그리고 **SavedModel Format**으로 저장하는 내용의 코드는 [깃헙](https://github.com/junimnjw/codes/blob/master/python/mnist_tflite_project/export_mnist_to_savedmodel.py)에 올려두었으니 참고해주세요. 
 
+   
 
+2. **TF Serving 구동**
 
-1. 서버 구동 
+   이제 저장한 모델을 가지고 운영환경에서 **TF Serving**을 구동하는데는 아래 명령어가 전부입니다. 
 
+   ```
+   $ tensorflow_model_server --port=9000 --model_name=deeplab --model_base_path=<full/path/to/serving/versions/>
+   ```
 
+   model_base_path에 이전에 생성해두었던 **SavedModel**의 위치만 입력해주는게 끝입니다. 어떤 버전을 어떻게 로드하는지 어떻게 아는건가요? 걱정마세요. **TF Serving**이 해당 Path내에 존재하는 모델들의 버전 정보를 보고 제일 상위버전을 알아서 로드해줍니다. 
 
-이제 저장한 모델을 가지고 운영환경에서 **TF Serving**을 구동하는데는 아래 명령어가 전부입니다. 
+   
 
-~~~
-$ tensorflow_model_server --port=9000 --model_name=deeplab --model_base_path=<full/path/to/serving/versions/>
-~~~
+3. **클라이언트 요청부**
 
-model_base_path에 이전에 생성해두었던 **SavedModel**의 위치만 입력해주는게 끝입니다. 어떤 버전을 어떻게 로드하는지 어떻게 아는건가요? 걱정마세요. **TF Serving**이 해당 Path내에 존재하는 모델들의 버전 정보를 보고 제일 상위버전을 알아서 로드해줍니다. 
+   서버에 수기로 작성한 숫자 이미지 하나(물론 MNIST에서 제공하는 TEST이미지)를 보내고, 이것에 대한 결과를 받는 요청을 작성하겠습니다. 
 
-
-
-1. 클라이언트 요청부
-
-서버에 수기로 작성한 숫자 이미지 하나(물론 MNIST에서 제공하는 TEST이미지)를 보내고, 이것에 대한 결과를 받는 요청을 작성하겠습니다. 
-
-
-
-
+   
 
 ## 결론
 
