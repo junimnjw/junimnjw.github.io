@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Backpropagation, Who are You?"
-Use_math: true
 categories: DEV
 date: 2019-09-16
 lastmod : 2019-09-16 14:00:00
