@@ -84,6 +84,3 @@ dddd
 
 
 ## 참고문헌
-
-[1]:https://bcho.tistory.com/1182 "조대협의 블로그"
-[2]: https://developers.google.com/protocol-buffers/docs/pythontutorial?hl=ko "Protocol Buffers Basic for Python"
