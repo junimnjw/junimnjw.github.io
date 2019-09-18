@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "텐서플로우 라이트 모델 생성(3)"
+title: "Tensorflow Lite, Who are you?-(3)"
 categories: DEV
 date: 2019-08-09
-lastmod : 2019-08-09 16:00:00
+lastmod : 2019-09-18 16:00:00
 sitemap :
 changefreq : hourly
 priority : 1.0
@@ -12,6 +12,8 @@ priority : 1.0
 안녕하세요. 코딩벅스입니다. 
 
 
+
+## 들어가며
 
 이번 포스트에서는 앞서 변환을 통해 얻은 **텐서플로우 라이트 모델**을 가지고 앱에서 사용하는 과정을
 
@@ -24,6 +26,10 @@ priority : 1.0
 * 안드로이드 스튜디오 설치
 * 텐서플로우 라이트 모델(.tflite)
 * [텐서플로우 라이트 예제 앱](https://github.com/tensorflow/examples)
+
+
+
+## 본문
 
 
 

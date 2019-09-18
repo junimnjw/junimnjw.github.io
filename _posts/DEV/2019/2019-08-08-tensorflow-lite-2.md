@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "텐서플로우 라이트 모델 생성(2)"
+title: "Tensorflow Lite, Who are you?-(2)"
 categories: DEV
 date: 2019-08-09
-lastmod : 2019-08-11 09:16:00
+lastmod : 2019-09-18 09:16:00
 sitemap :
 changefreq : hourly
 priority : 1.0
@@ -13,7 +13,7 @@ priority : 1.0
 
 
 
-## 배경설명
+## 들어가며
 
 
 
