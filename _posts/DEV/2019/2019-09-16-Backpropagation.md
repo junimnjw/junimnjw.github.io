@@ -3,7 +3,7 @@ layout: post
 title: 'Backpropagation, Who are You?'
 categories: DEV
 date: 2019-09-16
-lastmod : 2019-09-16 14:00:00
+lastmod : 2019-09-24 05:00:00
 sitemap :
 changefreq : daily
 priority : 1.0
