@@ -138,6 +138,8 @@ $$
 
  
 
+
+
 ## 참고문헌
 
 [1]:http://jaejunyoo.blogspot.com/2017/01/backpropagation.html
