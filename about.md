@@ -1,23 +1,32 @@
 ---
 layout: about
-title: ABOUT
+title: ABOUT ME
 permalink: /about/
 ---
 
 ![title](./assets/profile.jpg)
 
 
-# 남 진 우(南 進 佑)
-
-* 삼성전자, 現 SR-CLab 소속, 2012 - Current 
-* 울산과학기술원, 석사, 2010 - 2012
-* 부경대학교, 학사, 2002 - 2006 
-* 관심분야: 머신러닝, 인공지능 그리고 자기발전(?)
 
 
 
-인사말
+#### Jinwoo Nam
 
- 안녕하세요. **코딩벅스**라는 필명으로 활동하는 남진우입니다. 취미로 블로그 활동을 하고 있습니다. S/W 개발에 대한 글을 주로 쓰고, 가끔 제 생각, 인상깊은 글귀 등 다양한 장르의 글도 올립니다. 제 글에 대한 적극적 관심과 격려는 큰 힘이 됩니다. 감사합니다!
+* Samsung Electronics, 2012 - Current 
+* Ulsan National Institute of Science and Technology, M.S., 2010 - 2012
+* Pukyoung National University, B.S., 2002 - 2006 
+* Research Interests: AI, Computer Graphics
 
-깃헙 코드:  [Github](https://github.com/junimnjw)    
+
+
+Hi. Glad to meet you. My name is Jinwoo Nam. I am now maintaining this blog for fun.
+
+I used to share with my idea or feeling about what I've read and seen. 
+
+Please read every content on this blog and feel free to share your opinion any time. 
+
+
+
+[Curriculum Vitae](/assets/file/jinwoo-cv.pdf)
+
+[Github](https://github.com/junimnjw)    
