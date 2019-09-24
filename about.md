@@ -12,9 +12,9 @@ permalink: /about/
 
 #### Jinwoo Nam
 
-* Samsung Electronics, 2012 - Current 
-* Ulsan National Institute of Science and Technology, M.S., 2010 - 2012
-* Pukyoung National University, B.S., 2002 - 2006 
+* Samsung Electronics, 2012 - Present
+* Ulsan National Institute of Science and Technology, M.S, 2010 - 2012
+* Pukyoung National University, B.S, 2002 - 2006 
 * Research Interests: AI, Computer Graphics
 
 
