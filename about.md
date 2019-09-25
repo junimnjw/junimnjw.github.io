@@ -8,22 +8,19 @@ permalink: /about/
 
 
 
+### Jinwoo Nam
 
+#### Work Experience
 
-#### Jinwoo Nam
+* Creative Lab, Samsung Research, Samsung Electronics. Mar 2019 - Present
+* SW Platform Lab., Visual Display, Samsung Electronics. Aug 2012 - Feb 2019
 
-* Samsung Electronics, 2012 - Present
 * Ulsan National Institute of Science and Technology, M.S, 2010 - 2012
 * Pukyoung National University, B.S, 2002 - 2006 
-* Research Interests: AI, Computer Graphics
 
 
 
-Hi. Glad to meet you. My name is Jinwoo Nam. I am now maintaining this blog for fun.
-
-I used to share with my idea or feeling about what I've read and seen. 
-
-Please read every content on this blog and feel free to share your opinion any time. 
+Hi. Thank you for visiting here. My name is Jinwoo Nam. I am now maintaining this blog for sharing my feeling about what I have seen and read from other things. Please read every content on my blog and also feel free to share your opinion any time. 
 
 
 
