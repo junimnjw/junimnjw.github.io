@@ -35,7 +35,7 @@ priority : 1.0
 
 
 
-![img1](/assets/img/backpropagation1.png)
+![img1](/assets/img/backpropagation1.png){:.aligncenter}
 
 
 
