@@ -15,7 +15,7 @@ priority : 1.0
 
 ### 들어가며
 
-아래는 신경망(Neural Network) **성능**을 결정짓는데 중요한 요소들입니다. 
+k아래는 신경망(Neural Network) **성능**을 결정짓는데 중요한 요소들입니다. 
 
 * 컴퓨팅 파워(고성능 GPU, 돈이 필요하네요...)
 * 학습용 대량의 고품질 Labeled 데이터 (이것도 다 돈이죠...)
@@ -35,7 +35,7 @@ priority : 1.0
 
 
 
-![img1](/assets/img/backpropagation1.png){:.aligncenter}
+![img1](/assets/img/backpropagation1.png?style=centerme)
 
 
 
