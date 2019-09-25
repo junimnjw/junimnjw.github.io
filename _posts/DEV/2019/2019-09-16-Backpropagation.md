@@ -15,7 +15,7 @@ priority : 1.0
 
 ### 들어가며
 
-k아래는 신경망(Neural Network) **성능**을 결정짓는데 중요한 요소들입니다. 
+ 아래는 신경망(Neural Network) **성능**을 결정짓는데 중요한 요소들입니다. 
 
 * 컴퓨팅 파워(고성능 GPU, 돈이 필요하네요...)
 * 학습용 대량의 고품질 Labeled 데이터 (이것도 다 돈이죠...)
@@ -33,9 +33,12 @@ k아래는 신경망(Neural Network) **성능**을 결정짓는데 중요한 요
 
  **Backpropagation**의 수학적 원리를 설명하기 위해 2개의 층으로 이루어진 단순한 신경망을 사용하겠습니다. 실제 딥러닝에서 사용되는 신경망들은 훨씬 복잡한 구조를 이루지만, 학습 방법의 기저는 **Backpropagation**에서 출발합니다.  
 
+.center {
+display: block;
+margin: auto;
+}
 
-
-![img1](/assets/img/backpropagation1.png?style=centerme)
+![img1](/assets/img/backpropagation1.png){: .center}
 
 
 
