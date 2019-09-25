@@ -33,7 +33,9 @@ priority : 1.0
 
  **Backpropagation**의 수학적 원리를 설명하기 위해 2개의 층으로 이루어진 단순한 신경망을 사용하겠습니다. 실제 딥러닝에서 사용되는 신경망들은 훨씬 복잡한 구조를 이루지만, 학습 방법의 기저는 **Backpropagation**에서 출발합니다.  
 
-<center>![img1](/assets/img/backpropagation1.png)</center>
+
+
+![img1](/assets/img/backpropagation1.png)
 
 
 
