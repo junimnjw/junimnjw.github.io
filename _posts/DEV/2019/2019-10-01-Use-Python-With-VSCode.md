@@ -46,17 +46,15 @@ Python을 컴퓨터에 설치하는 방법 가운데 초보자님들에게 권�
   각자가 뭘 하는지 설명 참고하세요. 저도 자세하게는 모릅니다. 그냥 설치하세요 ㅎ
 
   <center><img src="/assets/img/vscode1.png"></center>
-
-  <br>
-
+<br>
+  
 * 인터프리터 세팅
 
   팔렛트 창 활성화(Crtl + Shift + P)하고, **"Python: Select Intepreter"**를 검색합니다. 선택가능한 리스트 가운데 원하시는 파이썬 환경을 선택하세요. (자신이 생성한 Conda 가상환경이 바로 반영되지는 않는 것 같아요. 좀 기다려리셔야되요. 이런 경우는 그냥 **base**로 우선 선택하고 settings.json에서 수정해주셔야 해요)
 
   <center><img src="/assets/img/vscode2.png"></center>
-
-  <br>
-
+<br>
+  
 * 디폴트 터미널 설정
 
   VS Code는 기본으로 터미널에 대해 PowerShell을 지정합니다. 근데 저도 사실 잘 안써본 거구요. 전 여전히 윈도우 기본 도스 터미널에 익숙해져있습니다. 그래서 저는 윈도우 기본 터미널을 VS Code의 기본 터미널로 지정해보려고 합니다. 
@@ -66,15 +64,13 @@ Python을 컴퓨터에 설치하는 방법 가운데 초보자님들에게 권�
   <center><img src="/assets/img/vscode3.png"></center>
 
   
-
-  <br>
+<br>
 
 이제 기본적인 것은 마쳤습니다. 코드를 하나 만들어서 돌려보면 됩니다. 
 
 **Hello World**를 출력하는 파이썬 프로그램을 만들고, VSCode의 Explorer에서 해당 파일을 선택하고, 마우스 오른쪽 버튼 메뉴에서 **Run Python File in Terminal**을 선택합니다. 
 
 <center><img src="/assets/img/vscode4.png"></center>
-
 <br>
 
 짜잔! 
@@ -82,14 +78,7 @@ Python을 컴퓨터에 설치하는 방법 가운데 초보자님들에게 권�
 <center><img src="/assets/img/vscode5.png"></center>
 
 
-
-#### 
-
-
-
-
-
-
+<br>
 
  
 
