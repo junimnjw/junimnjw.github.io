@@ -74,7 +74,7 @@ priority : 1.0
 
 짜잔! 
 
-<center><img src="/assets/img/vscode5.png"></center>
+<center><img src="/assets/img/vscode5.PNG"></center>
 
 <br>
 
@@ -85,3 +85,4 @@ priority : 1.0
 ## 참고문헌
 
 [1]:https://excelsior-cjh.tistory.com/79	"EXCELSIOR 블로그"
+
