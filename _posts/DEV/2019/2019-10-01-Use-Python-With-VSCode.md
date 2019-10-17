@@ -23,21 +23,21 @@ priority : 1.0
 
 ### 본문
 
-#### 1. VS Code 최신 버전 설치
+#### **1. VS Code 최신 버전 설치**
 
 [이 곳](https://code.visualstudio.com/Download)에서 플랫폼에 맞는 녀석을 다운로드 받아서 설치합니다.
 
+<br>
 
-
-#### 2. Anaconda 설치
+#### **2. Anaconda 설치**
 
  파이썬 개발 환경을 설치하는 방법 가운데 초보자님들에게 권하는 방식은 Anaconda 패키지를 이용하는 것입니다. 파이썬 인터프리터 뿐만 아니라 다양한 개발 패키지들이 포함되어있고, **conda**를 사용한 가상환경 설정이 가능하다는 장점도 있기 때문이죠. 
 
 [이 곳](https://www.anaconda.com/distribution/)에서 역시나 플랫폼에 맞는 녀석을 다운로드 받아서 설치합니다.
 
+<br>
 
-
-#### 3. VS Code 실행 
+#### **3. VS Code 실행** 
 
 * 파이썬 연관 플러그인 설치 : Python, Python for VSCode, Python Extension Pack
 
@@ -61,8 +61,9 @@ priority : 1.0
 
   <center><img src="/assets/img/vscode3.png"></center>
 
+  <br>
 
-<br>
+#### **4. 마무리**
 
 이제 기본적인 것은 마쳤습니다. 파이썬 코드를 만들어서 돌려보면 됩니다. 
 
@@ -76,8 +77,6 @@ priority : 1.0
 <center><img src="/assets/img/vscode5.png"></center>
 
 <br>
-
- 
 
 감사합니다!!!
 
