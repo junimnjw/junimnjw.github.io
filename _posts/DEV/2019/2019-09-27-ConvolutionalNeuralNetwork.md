@@ -19,7 +19,7 @@ priority : 1.0
 
 <br>
 
- 오늘 다룰 **Convolutional Neural Network(이하 CNN)**는 딥러닝을 통한 이미지 분류에서 알고리즘에서 기원이 되는 딥러닝 아키텍처입니다. Backpropagation이 학습 알고리즘의 뼈대라고 한다면, **CNN**은 이미지 분류에 대한 딥러닝 모델들의 기원이라고 할 수 있습니다. 그만큼 딥러닝을 공부하겠다면 꼭 짚고넘어가야할 중요한 기술이죠. 
+ 오늘 다룰 **Convolutional Neural Network(이하 CNN)**는 이미지 분류를 위한 딥러닝 모델의 근원입니다. **Backpropagation**이 학습 알고리즘의 뼈대라고 한다면, **CNN**은 이미지 분류에 최적화된 딥러닝 모델들의 기원이라고 할 수 있습니다. 그만큼 딥러닝을 공부하겠다면 꼭 짚고넘어가야할 중요한 기술이죠. 
 
 <br>
 
@@ -30,6 +30,10 @@ priority : 1.0
 ### 본문
 
 
+
+What is Convolution?
+
+사실 CNN은 Convolution 연산입니다. 하.. 학부때 전 사실 공부를 너무 안했습니다. 학점을 위해 다녔지..학문을 위해 다니지는 않은것 같아요. 
 
 #### Basic of CNN
 
@@ -45,4 +49,4 @@ priority : 1.0
 
 ## 참고문헌
 
-[1]:https://excelsior-cjh.tistory.com/79	"EXCELSIOR 블로그"
+[Backpropagation]:(https://junimnjw.github.io/dev/2019/09/16/Backpropagation.html)
