@@ -11,7 +11,7 @@ priority : 1.0
 
 
 
-![RichDad](/assets/img/richdad.jpg)
+<center><img src="/assets/img/richdad.jpg"></center>
 
 
 
