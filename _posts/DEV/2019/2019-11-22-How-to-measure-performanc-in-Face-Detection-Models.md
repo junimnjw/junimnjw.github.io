@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '얼굴 검출 알고리듬 비교'
+title: 'How to measure performance in Face Detection Algorithm.'
 categories: DEV
 date: 2019-11-22
 lastmod : 2019-11-22 09:00:00
@@ -12,14 +12,11 @@ priority : 1.0
 <br>
 
 <center><span style="color:red">본 글은 SeongKyun Han's Blog의 원문을 토대로 제가 요약한 글임을 밝혀둡니다.</span></center>
-
 <br>
 
 얼굴 검출 알고리듬들을 비교하는 기준에 대해서 소개하려고 합니다. 
 
-
-
-얼굴 검출 알고리듬의 우수한 정도를 측정하데 필요한 지표는 두가지입니다. 
+얼굴 검출 알고리듬의 우수한 정도를 측정하데 필요한 지표는 **두가지**입니다. 
 
 
 
