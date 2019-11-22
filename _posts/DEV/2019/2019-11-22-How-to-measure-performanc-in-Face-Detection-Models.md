@@ -14,7 +14,9 @@ priority : 1.0
 <center><span style="color:red">본 글은 SeongKyun Han's Blog의 원문을 토대로 제가 요약한 글임을 밝혀둡니다.</span></center>
 <br>
 
-얼굴 검출 알고리듬들을 비교하는 기준에 대해서 소개하려고 합니다. 
+안녕하세요. 코딩벅스입니다. 
+
+얼굴 검출 알고리듬들을 비교하는 기준에 대해서 오늘 소개하려고 합니다. 
 
 얼굴 검출 알고리듬의 우수한 정도를 측정하데 필요한 지표는 **두가지**입니다. 
 
@@ -70,3 +72,12 @@ priority : 1.0
 공인된 그리고 공개된 얼굴 검출 테스트 대상 가운데 하나가 바로 **WIDER Face Dataset**이며, 
 
 32,203개 이미지에 393,703개의 레이블이 붙은 데이터 셋입니다. 
+
+
+
+
+
+## References
+
+[1]: https://seongkyun.github.io/study/2019/03/25/face_detection/
+
