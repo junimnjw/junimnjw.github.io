@@ -9,8 +9,7 @@ changefreq : daily
 priority : 1.0
 ---
 
-<center><span style="color:red">본 글은 References를 참고해서 작성한 글임을 미리 밝혀둡니다.</center>
-
+<center><span style="color:red">본 글은 References를 참고해서 작성한 글임을 미리 밝혀둡니다.</span></center>
 안녕하세요. 코딩벅스입니다. 
 
 
