@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'SSH란 무엇인가?'
+title: 'SSH 제대로 이해하기'
 categories: DEV
 date: 2019-11-28
 lastmod : 2019-11-28 09:00:00
