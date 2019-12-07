@@ -14,7 +14,9 @@ priority : 1.0
 <center><span style="color:red">Kat Busch가 작성한 원문을 토대로 쓴 글임을 밝혀둡니다.</span></center>
 <br>
 
- 컴퓨터 성능이 비약적으로 발전하면서, 성능 개선이란 단어에 대한 인기는 사실 이전만 못합니다. 
+ 컴퓨터 성능이 비약적으로 발전하면서, 
+
+성능 개선이란 단어에 대한 인기는 사실 이전만 못합니다. 
 
 그래도 개발자라면 성능 개선은 피할 수 없는 것이죠. 
 
@@ -98,7 +100,6 @@ Lock 을 사용해 한 프로세스만 파일 쓰기가 가능하도록 몇 줄�
 <center><span style="color:black;font-size:40px">정확히 Bottleneck이 어딘지 모르는 상황에서, 성능개선 시도는 반드시 실패한다.</span></center>
 
 
-
 보통은 자신이 건드리는 부분이 Bottleneck라고 생각합니다. 
 
 그러나 숲은 못보고 나무를 보는 것과 같죠. 
@@ -130,7 +131,6 @@ Go라는 언어를 사용하여, 성능 개선을 목적으로 복잡한 웹 엔
 
 
 <center><span style="color:black;font-size:40px">항상 스스로에게 질문하세요! 어떤 성능 요소가 최종 사용자에게 영향을 주는 부분인건지? 그리고 당신이 작성한 코드는 그 성능 요소에 어떤 영향을 미치는지?</span></center>
-
 
 
 #### Part 2. Complexity
