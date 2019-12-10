@@ -9,7 +9,8 @@ changefreq : daily
 priority : 1.0
 ---
 
-<center><span style="color:red">본 글은 References를 참고해서 작성한 글임을 미리 밝혀둡니다.</span></center>
+<center><span style="color:red">본 글은 References를 참고한 글임을 미리 밝혀둡니다.</span></center>
+
 <br>
 
 안녕하세요. 코딩벅스입니다. 
@@ -18,17 +19,11 @@ priority : 1.0
 
 <br>
 
-군더더기 없는 **TensorRT** 설명, 시작하겠습니다. 
+군더더기 없는 **TensorRT** 설명, 시작하겠습니다. **TensorRT**는 **nVidia**에서 만든 <span style="color:red;font-weight:bold">딥러닝 인퍼런싱 전용 라이브러리</span>입니다. 딥러닝 모델을 최적화 시켜서, 인퍼런싱 성능을 극대화 시켜주는 임무를 가집니다. 이 **라이브러리**는 2017년 TensorRT1을 시작으로 현재(2019년 12월 기준)는 TensorRT 6까지 나온 상황입니다. 
 
-**TensorRT**는 **nVidia**에서 만든 <span style="color:red;font-weight:bold">딥러닝 인퍼런싱 전용 라이브러리</span>입니다. 
+<br>
 
-딥러닝 모델을 최적화 시켜서, 
-
-인퍼런싱 성능을 극대화 시켜주는 임무를 가집니다. 
-
-이 **라이브러리**는 2017년 TensorRT1을 시작으로 
-
-현재(2019년 12월 기준)는 TensorRT 6까지 나온 상황입니다. 
+어떻게 성능을 끌어올릴수 있죠? 그건 **nVidia**에서 만든 **GPU**와 **CUDA-X AI** 등 최신 기술등을 활용해서 가능한 것입니다. 
 
 <br>
 
@@ -36,17 +31,13 @@ priority : 1.0
 
 <img src="https://devblogs.nvidia.com/parallelforall/wp-content/uploads/2016/06/GIE_Graphics_FINAL-1.png" style="zoom:67%;" />
 
-첫번째 단계에서는 기존 학습된 딥러닝 모델을 
-
-양자화(Quantization)등을 통해서 성능 최적화합니다. 
+첫번째 단계에서는 기존 학습된 딥러닝 모델을 양자화(Quantization)등을 통해서 성능 최적화합니다. 
 
 <br>
 
 두번째 단계에서는 최적화된 모델을 런타임에서 실시간으로 추론하죠. 
 
 <br>
-
-
 
 
 
