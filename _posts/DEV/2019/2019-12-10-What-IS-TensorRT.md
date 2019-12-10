@@ -10,12 +10,11 @@ priority : 1.0
 ---
 
 <center><span style="color:red">본 글은 References를 참고한 글임을 미리 밝혀둡니다.</span></center>
-
 <br>
 
 안녕하세요. 코딩벅스입니다. 
 
-**TensorRT**, 발표된지 꽤 되었지만, 한글자료가 많이 없네요.
+**TensorRT**, 발표된지 꽤 되었지만 한글자료가 많이 없네요.
 
 <br>
 
@@ -38,6 +37,31 @@ priority : 1.0
 두번째 단계에서는 최적화된 모델을 런타임에서 실시간으로 추론하죠. 
 
 <br>
+
+
+
+### 설치
+
+설치가 꽤 어렵습니다. 
+
+**TensorRT**설치를 위해서는, GPU가 지원하는지, 
+
+사용중인 CUDA 버전과, Tensorflow 버전은 어떻게 되는지등을 다 챙겨야합니다. 왜냐? 위 버전에 따라서 동작 가능한 **TensorRT**의 버전도 달라지기 때문이죠. 호환 버전에 대한 자세한 정보는 [Supported Matrix Table](https://docs.nvidia.com/deeplearning/frameworks/tf-trt-user-guide/index.html#prereqs)를 참고해주세요.
+
+<br>
+
+일단 저의 설치 환경은 다음과 같습니다. 
+
+* Ubuntu 18.04 LTS
+* NVIDIA CUDA 10.2.89
+* Tensorflow 1.15.0
+* <span style="color:red;font-weight:bold">TensorRT 6.0.1</span>
+
+<br>
+
+**TensorRT** 설치에 대한 자세한 설명은 다음 [링크](https://docs.nvidia.com/deeplearning/sdk/tensorrt-install-guide/index.html)로 갈음한다.
+
+
 
 
 
