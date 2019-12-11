@@ -42,24 +42,29 @@ priority : 1.0
 
 ### 설치
 
-설치가 꽤 어렵습니다. 
+설치가 꽤 어렵습니다. 저도 3시간 정도 걸려서 겨우 TensorRT 예제를 돌려봤네요. 
 
-**TensorRT**설치를 위해서는, GPU가 지원하는지, 
-
-사용중인 CUDA 버전과, Tensorflow 버전은 어떻게 되는지등을 다 챙겨야합니다. 왜냐? 위 버전에 따라서 동작 가능한 **TensorRT**의 버전도 달라지기 때문이죠. 호환 버전에 대한 자세한 정보는 [Supported Matrix Table](https://docs.nvidia.com/deeplearning/frameworks/tf-trt-user-guide/index.html#prereqs)를 참고해주세요.
+**TensorRT**설치를 위해서는, 내 플랫폼 버전은 어떻게 되는지, GPU가 지원하는지, 사용중인 CUDA 버전과, Tensorflow 버전은 어떻게 되는지등을 꼼꼼하게 챙겨야합니다. 왜? 위 환경에 따라서 **TensorRT**의 설치 가능 버전도 달라지기 때문이죠. 호환 버전에 대한 자세한 정보는 [Supported Matrix Table](https://docs.nvidia.com/deeplearning/frameworks/tf-trt-user-guide/index.html#prereqs)를 참고해주세요.
 
 <br>
 
 일단 저의 설치 환경은 다음과 같습니다. 
 
+* Nvidia GTX 1060
 * Ubuntu 18.04 LTS
-* NVIDIA CUDA 10.2.89
-* Tensorflow 1.15.0
+* Python 3.6
+* Cudnn 7.6.5
+* CudaToolkit - NVIDIA CUDA 10.1
+* Tensorflow 1.14
 * <span style="color:red;font-weight:bold">TensorRT 6.0.1</span>
 
 <br>
 
-**TensorRT** 설치에 대한 자세한 설명은 다음 [링크](https://docs.nvidia.com/deeplearning/sdk/tensorrt-install-guide/index.html)로 갈음한다.
+**TensorRT** 설치에 대한 자세한 설명은 다음 [개인블로그](1)와 [공식가이드](2)로 갈음한다.
+
+다만, 수차례 경험끝에 얻은 개인적인 팁들을 공유합니다.
+
+첫째, 가상환경에서 TensorRT설치는 쉽지않습니다. 그냥 sudo를 사용해서 root에서 설치하세요. 
 
 
 
@@ -67,6 +72,6 @@ priority : 1.0
 
 ## References
 
-[1]: https://medium.com/@nsh235482/git-%EC%8B%A0%EC%9E%85%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%9D%98-git-%EC%82%AC%EC%9A%A9%EA%B8%B0-1-%EA%B8%B0%EB%B3%B8-%EA%B5%AC%EC%A1%B0-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-728c64824ebe	"GIT 기본 구조 이해하기"
+[1]: https://eehoeskrap.tistory.com/302	"TensorRT 설치"
 
-[2]: http://blog.outsider.ne.kr/865
+[2]:https://docs.nvidia.com/deeplearning/sdk/tensorrt-install-guide/index.html	"NVIDIA SDK INSTALLTION DEVELPOER GUIDE"
