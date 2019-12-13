@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'How to measure performance in Face Detection Algorithm.'
+title: '얼굴검출 성능평가법 제대로 이해하기.'
 categories: DEV
 date: 2019-11-22
 lastmod : 2019-11-22 09:00:00
@@ -9,9 +9,8 @@ changefreq : daily
 priority : 1.0
 ---
 
-<br>
+<center><span style="color:red">본 글은 참고 원문을 요약한 글임을 밝혀둡니다.</span></center>
 
-<center><span style="color:red">본 글은 SeongKyun Han's Blog의 원문을 토대로 제가 요약한 글임을 밝혀둡니다.</span></center>
 <br>
 
 안녕하세요. 코딩벅스입니다. 
