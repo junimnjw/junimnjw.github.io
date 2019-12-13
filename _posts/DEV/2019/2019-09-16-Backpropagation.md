@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Backpropagation, Who are You?'
+title: 'Backpropagation 제대로 이해하기'
 categories: DEV
 date: 2019-09-16
 lastmod : 2019-09-28 05:00:00
