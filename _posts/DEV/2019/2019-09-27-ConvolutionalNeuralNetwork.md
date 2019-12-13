@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'CNN, Who are You?'
+title: 'CNN 제대로 이해하기'
 categories: DEV
 date: 2019-09-27
 lastmod : 2019-09-27 05:00:00
