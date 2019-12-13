@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Tensorflow Lite, Who are you?-(1)"
+title: "Tensorflow Lite 제대로 이해하기"
 categories: DEV
 date: 2019-08-07
 lastmod : 2019-09-18 09:16:00
