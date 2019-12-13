@@ -14,11 +14,9 @@ priority : 1.0
 
 안녕하세요. 코딩벅스입니다. 
 
-**TensorRT**, 발표된지 꽤 되었지만 한글자료가 많이 없네요.
+**TensorRT**에 관한 한글 자료가 많지 않네요. 
 
-<br>
-
-군더더기 없는 **TensorRT** 설명, 시작하겠습니다. **TensorRT**는 **nVidia**에서 만든 <span style="color:red;font-weight:bold">딥러닝 인퍼런싱 전용 라이브러리</span>입니다. 딥러닝 모델을 최적화 시켜서, 인퍼런싱 성능을 극대화 시켜주는 임무를 가집니다. 이 **라이브러리**는 2017년 TensorRT1을 시작으로 현재(2019년 12월 기준)는 TensorRT 6까지 나온 상황입니다. 
+**TensorRT**는 **nVidia**에서 만든 <span style="color:red;font-weight:bold">딥러닝 인퍼런싱 최적화 라이브러리</span>입니다. 기존 딥러닝 모델을 최적화 시키고, 인퍼런싱 성능을 높여주는 임무를 가집니다. 2017년 TensorRT 1을 시작으로 현재(2019년 12월 기준)는 TensorRT 6까지 나온 상황입니다. 
 
 <br>
 
