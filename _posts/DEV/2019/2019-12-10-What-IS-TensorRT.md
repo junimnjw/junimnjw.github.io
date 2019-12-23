@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 'TensorRT 이해하기'
+title: 'TensorRT란 무엇인가?'
 categories: DEV
 date: 2019-12-10
-lastmod : 2019-12-10 09:00:00
+lastmod : 2019-23-10 09:00:00
 sitemap :
 changefreq : daily
 priority : 1.0
@@ -14,23 +14,21 @@ priority : 1.0
 
 안녕하세요. 코딩벅스입니다. 
 
-**TensorRT**에 관한 한글 자료가 많지 않네요. 
-
-**TensorRT**는 **NVIDIA**에서 만든 <span style="color:red;font-weight:bold">딥러닝 인퍼런싱 최적화 라이브러리</span>입니다. 쉽게 말하면, 기존 딥러닝 모델을 최적화 시켜서, 인퍼런싱 성능을 높여주는 임무를 가집니다. 2017년 **TensorRT 1**을 시작으로 현재(2019년 12월 기준)는 **TensorRT 6**까지 나온 상황입니다. 
+**TensorRT**는 **NVIDIA**에서 만든 <span style="color:red;font-weight:bold">딥러닝 인퍼런싱 최적화 라이브러리</span>입니다. 쉽게 말하면, 기존 딥러닝 모델을 최적화 시켜, 인퍼런싱 성능을 극대화 시켜주는 라이브러리입니다. 2017년 **TensorRT 1**을 시작으로 현재 기준(2019년 12월)으로 **TensorRT 6**까지 나온 상황입니다. 
 
 <br>
 
-성능을 어떻게 끌어올릴수다는 말이죠? 그건 **NVIDIA**에서 만든 **GPU**와 **CUDA-X AI** 등 최신 기술등을 활용해서 가능한 것입니다. 
+성능을 끌어올리는 건, **NVIDIA** **GPU**와 **CUDA-X AI** 등 최신 기술등을 활용해서 가능한 것입니다. 
 
 <br>
 
-**TensorRT**의 동작 구조는 크게 두가지 구조로 나뉩니다. 
+**TensorRT** 동작은 크게 두가지 구조로 나뉩니다. 
 
 <img src="https://devblogs.nvidia.com/parallelforall/wp-content/uploads/2016/06/GIE_Graphics_FINAL-1.png" style="zoom:67%;" />
 
-1 단계에서는 기존 학습된 딥러닝 모델을 양자화(Quantization)등을 통해서 성능 최적화합니다. 
+첫 단계는 기존 딥러닝 모델을 최적화된 모델로 변경하는 것이죠. 
 
-2단계에서는 최적화된 모델을 런타임에서 실시간으로 추론하죠. 
+두번째 단계는 이러한 최적화된 모델을 사용해서 런타임에서 추론하죠. 
 
 <br>
 
@@ -38,17 +36,17 @@ priority : 1.0
 
 ### 설치
 
-설치가 꽤 어렵습니다. 
+**TensorRT**는 설치가 은근히 어렵습니다. 
 
-저도 3시간 걸려서 겨우 TensorRT 예제 하나를 돌려봤네요. 
+저도 몇 시간 걸려서 예제 하나를 겨우 돌려봤네요. 
 
-**TensorRT** 설치를 위해서는, 내 플랫폼 버전은 어떻게 되는지, GPU가 지원하는지, 사용중인 CUDA 버전과, Tensorflow 버전은 어떻게 되는지등을 꼼꼼하게 챙겨야합니다. 왜? 위 환경에 따라서 **TensorRT**의 설치 가능 버전도 달라지기 때문이죠. 호환 버전에 대한 자세한 정보는 [Supported Matrix Table][3]를 참고해주세요.
+**TensorRT** 설치를 위해서는, 내가 사용하는 PC 혹은 서버의 플랫폼 버전은 어떻게 되는지,  GPU가 지원하는지, 그리고 CUDA 버전과, Tensorflow 버전은 어떻게 되는지등을 꼼꼼하게 챙겨야합니다. 이러한 환경에 따라서 **TensorRT**의 버전도 달라지기 때문이죠. 이러한 라이브러리들간의 전체적인 호환 정보는 [Supported Matrix Table][3]를 참고해주세요.
 
 <br>
 
 일단 저의 설치 환경은 다음과 같습니다. 
 
-* Nvidia GTX 1060
+* GTX 1660
 * Ubuntu 18.04 LTS
 * Python 3.6
 * Cudnn 7.6.5
