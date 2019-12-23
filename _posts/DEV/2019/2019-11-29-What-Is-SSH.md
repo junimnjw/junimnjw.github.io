@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SSH"
+title: "SSH 란 무엇인가?"
 categories: DEV
 date: 2019-11-28
 lastmod : 2019-12-23 09:00:00

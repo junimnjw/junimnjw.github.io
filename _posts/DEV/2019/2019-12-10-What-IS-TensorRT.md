@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "TensorRT"
+title: "TensorRT란 무엇인가?"
 categories: DEV
 date: 2019-12-10
 lastmod : 2019-12-23 09:00:00
@@ -10,7 +10,6 @@ priority : 1.0
 ---
 
 <center><span style="color:red">본 글은 References를 참고한 글임을 미리 밝혀둡니다.</span></center>
-
 안녕하세요. 코딩벅스입니다. 
 
 **TensorRT**는 **NVIDIA**에서 만든 <span style="color:red;font-weight:bold">딥러닝 인퍼런싱 최적화 라이브러리</span>입니다. 쉽게 말해서, 기존 딥러닝 모델을 구조적으로 개선하여, 추론 성능을 향상시키는 라이브러리입니다. 2017년 **TensorRT 1**을 시작으로 현재(2019년 12월 기준) **TensorRT 6**까지 나온 상황입니다. 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SavedModel 제대로 이해하기"
+title: "SavedModel 이란 무엇인가?"
 categories: DEV
 date: 2019-08-14
 lastmod : 2019-12-13 14:00:00

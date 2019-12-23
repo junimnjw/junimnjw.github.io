@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'CNN 제대로 이해하기'
+title: "CNN(Convolutional Neural Network)이란 무엇인가?"
 categories: DEV
 date: 2019-09-27
 lastmod : 2019-09-27 05:00:00
