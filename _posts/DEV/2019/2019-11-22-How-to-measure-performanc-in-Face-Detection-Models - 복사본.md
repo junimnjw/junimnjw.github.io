@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '얼굴검출 성능평가법 제대로 이해하기.'
+title: "얼굴검출 성능평가법"
 categories: DEV
 date: 2019-11-22
 lastmod : 2019-11-22 09:00:00
@@ -10,7 +10,6 @@ priority : 1.0
 ---
 
 <center><span style="color:red">본 글은 참고 원문을 요약한 글임을 밝혀둡니다.</span></center>
-
 <br>
 
 안녕하세요. 코딩벅스입니다. 
