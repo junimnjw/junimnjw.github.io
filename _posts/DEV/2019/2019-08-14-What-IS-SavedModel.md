@@ -3,7 +3,7 @@ layout: post
 title: "SavedModel 이란 무엇인가?"
 categories: DEV
 date: 2019-08-14
-lastmod : 2019-12-13 14:00:00
+lastmod : 2020-01-06 14:00:00
 sitemap :
 changefreq : daily
 priority : 1.0

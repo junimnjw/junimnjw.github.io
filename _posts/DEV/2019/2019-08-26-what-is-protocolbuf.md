@@ -3,9 +3,9 @@ layout: post
 title: "프로토콜버퍼(Protcol Buffer)란 무엇인가?"
 categories: DEV
 date: 2019-08-26
-lastmod : 2019-08-26 14:00:00
+lastmod : 2020-01-06 14:00:00
 sitemap :
-changefreq : hourly
+changefreq : daily
 priority : 1.0
 ---
 

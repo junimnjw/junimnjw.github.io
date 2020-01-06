@@ -24,6 +24,6 @@ Hi. Thank you for visiting here. My name is Jinwoo Nam. I am now maintaining thi
 
 
 
-[Curriculum Vitae](/assets/file/jinwoo-cv.pdf)
+[CV](/assets/file/jinwoo-cv.pdf)
 
 [Github](https://github.com/junimnjw)    

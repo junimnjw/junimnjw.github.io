@@ -3,9 +3,9 @@ layout: post
 title: "Tensorflow Lite 제대로 이해하기(2)"
 categories: DEV
 date: 2019-08-09
-lastmod : 2019-09-18 09:16:00
+lastmod : 2020-01-06 09:16:00
 sitemap :
-changefreq : hourly
+changefreq : daily
 priority : 1.0
 ---
 

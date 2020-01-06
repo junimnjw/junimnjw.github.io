@@ -3,7 +3,7 @@ layout: post
 title: "CNN(Convolutional Neural Network)이란 무엇인가?"
 categories: DEV
 date: 2019-09-27
-lastmod : 2019-09-27 05:00:00
+lastmod : 2020-01-06 05:00:00
 sitemap :
 changefreq : daily
 priority : 1.0
