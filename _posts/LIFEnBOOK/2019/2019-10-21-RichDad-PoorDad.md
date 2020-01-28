@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "후기 - 부자 아빠 가난한 아빠"
+title: "[후기]부자 아빠 가난한 아빠"
 categories: LIFEnBOOK
 date: 2019-10-21
 lastmod : 2019-11-06 19:16:00
