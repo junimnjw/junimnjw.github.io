@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "후기-이런 사람 만나지 마세요"
+title: "[후기]이런 사람 만나지 마세요"
 categories: LIFEnBOOK
 date: 2020-01-16
 lastmod : 2020-01-16 19:16:00
