@@ -1,15 +1,14 @@
 ---
 layout: post
-title: "OpticalFlow란 무엇인가?"
+title: "[운영체제] 운영체제 이해의 필요성"
 categories: DEV
-date: 2020-01-03
-lastmod : 2020-01-07 14:00:00
+date: 2020-02-27
+lastmod : 2020-02-27 14:00:00
 sitemap :
 changefreq : daily
 priority : 1.0
 ---
 
-<center><span style="color:red">본 글은 References를 참고한 글임을 미리 밝혀둡니다.</span></center>
 <br>
 
 운영체제.
