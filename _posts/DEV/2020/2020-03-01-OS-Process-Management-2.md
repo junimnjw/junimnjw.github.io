@@ -105,9 +105,19 @@ CPU Scheduling 종류들
 
 2. SJF - Shortest - Job - First
 
-   * 
+   * 이상적이나, 현실적이지 못하다.
 
-3. 
+     왜? 프로세스가 얼마나 걸릴지는 돌려보지 않는 한.. 알 수 없다.
+
+     
+
+3. Time Sharing 
+
+   Time Quantam ==> 0 
+
+   적절한 Time Quantum 을 찾는 것이 중요. 
+
+   
 
 
 
