@@ -21,23 +21,17 @@ priority : 1.0
 
 <br>
 
-<b>
+<b>전략</b> 
 
-전략 
+<b>느리게 시작하라! </b>
 
-즉.. 느리게 시작하라! 
+<b>생각중이라는 티를 내라</b>.
 
-생각중이라는 티를 내라.
-
-그리고 나중에 점점 빨리가라.
-
-필러를 써라.
-
-</b>
+<b>필러를 써라.</b>
 
 
 
-Useful Expression
+**Useful Expression**
 
 와우.. 정말 어려운 질문이네요. 
 
@@ -45,5 +39,5 @@ Wow... I didn't expect such a hard question.
 
 Wow.. That's tough.
 
-Wow.. Th
+Wow.. What a question
 
