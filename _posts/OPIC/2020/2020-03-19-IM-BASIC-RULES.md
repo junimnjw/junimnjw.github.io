@@ -11,16 +11,13 @@ priority : 1.0
 
 
 
-<br>
-
-**RULE 1 # Ava한테 질문하지마!** 
-
+**RULE # 1 Don't ask anything to Ava!** 
 You wanna about my place.. all right (o). 
 you wanna about my place? (x)
 
 <br>
 
-**RULE # 2 어려운 단어, 불편한 단어 쓰지마!.** 
+**RULE # 2 Do not use difficult words that u are uncomfortable with** 
 
 <br>
 **RULE # 3 한 문장에서 동일한 단어 두번 쓰지마!**
@@ -38,12 +35,20 @@ you wanna about my place? (x)
 
 <br>
 
-**RULE # 5 - Talk about only thing.** 
-A, B, C or D 물어봐도 오직 한가지에 대해서만 이야기 하라. 
-즉, A,B,C 는 1%, 그리고 D는 99%로 이야기 하라. 
+**RULE # 5 - Talk about only thing. Ony one thing**
+Tell me about A, B, C, or D.
+A, B, C ( 1%) 
+D (99%) 
+
 제발 정말 쓸데 없는 이야기 하지 마라~~
 
+<br>
 
+**RULE # 7 Make "Honest Exceuses" later. Not In the beginning!!.**
+
+I don't know remember exactly but ..I went to Canada.. (x)
+
+I went to Canada... Actually I don't know remember exactly (o)
 
 부가.!! 
 
