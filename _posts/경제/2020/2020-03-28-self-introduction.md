@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[OPIC] 자기소개"
+title: "[경제] Intro"
 categories:  경제
 date: 2020-03-28
 lastmod : 2020-03-28 19:16:00
