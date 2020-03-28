@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[운영체제] 운영체제 이해의 필요성"
-categories: DEV
+categories: 개발
 date: 2020-02-27
 lastmod : 2020-02-27 14:00:00
 sitemap :

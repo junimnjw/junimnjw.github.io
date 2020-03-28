@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '파이썬 VSCode 코딩하기'
-categories: DEV
+categories: 개발
 date: 2019-10-01
 lastmod : 2019-10-17 05:00:00
 sitemap :

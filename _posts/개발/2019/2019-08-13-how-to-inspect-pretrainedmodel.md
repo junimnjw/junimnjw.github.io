@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "텐서보드를 사용한 학습 모델 구조 파악하기"
-categories: DEV
+categories: 개발
 date: 2019-08-13
 lastmod : 2019-08-13 14:00:00
 sitemap :

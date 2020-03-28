@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Backpropagation 란 무엇인가?"
-categories: DEV
+categories: 개발
 date: 2019-09-16
 lastmod : 2020-01-06 05:00:00
 sitemap :

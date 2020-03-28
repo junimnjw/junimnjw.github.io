@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Tensorflow Lite 제대로 이해하기"
-categories: DEV
+categories: 개발
 date: 2019-08-07
 lastmod : 2020-01-06 09:16:00
 sitemap :

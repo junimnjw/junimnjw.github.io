@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "물체 검출 알고리즘의 성능 평가법"
-categories: DEV
+categories: 개발
 date: 2019-11-22
 lastmod : 2019-11-22 09:00:00
 sitemap :

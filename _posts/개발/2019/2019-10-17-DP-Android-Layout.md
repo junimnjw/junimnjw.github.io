@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Android DP 란 무엇인가?"
-categories: DEV
+categories: 개발
 date: 2019-10-01
 lastmod : 2019-10-18 09:00:00
 sitemap :

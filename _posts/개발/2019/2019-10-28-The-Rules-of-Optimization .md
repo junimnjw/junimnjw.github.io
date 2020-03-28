@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "알고리즘 성능개선의 원칙"
-categories: DEV
+categories: 개발
 date: 2019-10-28
 lastmod : 2019-12-23 09:00:00
 sitemap :

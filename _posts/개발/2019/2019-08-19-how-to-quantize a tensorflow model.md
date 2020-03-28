@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "학습 모델 양자화(Quantization)"
-categories: DEV
+categories: 개발
 date: 2019-08-19
 lastmod : 2019-08-19 14:00:00
 sitemap :

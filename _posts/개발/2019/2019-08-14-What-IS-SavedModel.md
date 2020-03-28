@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "SavedModel 이란 무엇인가?"
-categories: DEV
+categories: 개발
 date: 2019-08-14
 lastmod : 2020-01-06 14:00:00
 sitemap :

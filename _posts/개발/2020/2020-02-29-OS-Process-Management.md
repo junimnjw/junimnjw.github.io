@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[운영체제] 프로세스 관리"
-categories: DEV
+categories: 개발
 date: 2020-02-29
 lastmod : 2020-02-29 14:00:00
 sitemap :

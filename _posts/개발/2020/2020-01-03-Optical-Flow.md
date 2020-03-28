@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "OpticalFlow란 무엇인가?"
-categories: DEV
+categories: 개발
 date: 2020-01-03
 lastmod : 2020-01-07 14:00:00
 sitemap :

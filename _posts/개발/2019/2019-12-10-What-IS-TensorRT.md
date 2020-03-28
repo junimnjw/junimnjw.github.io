@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "TensorRT란 무엇인가?"
-categories: DEV
+categories: 개발
 date: 2019-12-10
 lastmod : 2019-12-23 09:00:00
 sitemap :
