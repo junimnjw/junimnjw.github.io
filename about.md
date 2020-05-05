@@ -12,7 +12,8 @@ permalink: /about/
 
 #### Work Experience
 
-* Creative Lab, Samsung Research, Samsung Electronics. Mar 2019 - Present
+* SW Platform Lab., Visual Display, Samsung Electronics. Mar 2020 - present
+* Creative Lab, Samsung Research, Samsung Electronics. Mar 2019 - Feb 2020
   * 45th ranked at the Kaggle's World Deepfake Detetion Competetion.
 * SW Platform Lab., Visual Display, Samsung Electronics. Aug 2012 - Feb 2019
 * Ulsan National Institute of Science and Technology, M.S, 2010 - 2012
