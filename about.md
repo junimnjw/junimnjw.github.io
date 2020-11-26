@@ -1,12 +1,10 @@
 ---
 layout: about
-title: dave nam
+title: dave.nam
 permalink: /about/
 ---
 
 ![title](./assets/profile.jpg)
-
-Dave Nam
 
 Work Experience
 
